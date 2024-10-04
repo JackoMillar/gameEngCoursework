@@ -418,6 +418,10 @@ FodyWeavers.xsd
 !.vscode/extensions.json
 *.code-workspace
 
+# Ignore some contents in the Build folder
+/Build/CMakeFiles/
+/Build/lib/
+
 # Local History for Visual Studio Code
 .history/
 
@@ -435,3 +439,17 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio
+/Build/ALL_BUILD.vcxproj
+/Build/ALL_BUILD.vcxproj.filters
+/Build/CMakeCache.txt
+/Build/cmake_install.cmake
+/Build/CPackConfig.cmake
+/Build/CPackSourceConfig.cmake
+/Build/INSTALL.vcxproj
+/Build/INSTALL.vcxproj.filters
+/Build/PACKAGE.vcxproj
+/Build/PACKAGE.vcxproj.filters
+/Build/sourceCode.vcxproj
+/Build/sourceCode.vcxproj.filters
+/Build/ZERO_CHECK.vcxproj
+/Build/ZERO_CHECK.vcxproj.filters

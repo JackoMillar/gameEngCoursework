@@ -22,12 +22,5 @@ link_directories("${CMAKE_BINARY_DIR}/lib/b2d/lib")
 #### Source Game ####
 file(GLOB_RECURSE SOURCES sourceCode/*.cpp sourceCode/*.h)
 add_executable(sourceCode ${SOURCES} "sourceCode/main.cpp" "sourceCode/main.h")
-target_include_directories(sourceCode PRIVATE ${SFML_INCS})
-target_link_libraries(sourceCode sfml-graphics)
-
-## physics
-file(GLOB_RECURSE SOURCES 5_physics/*.cpp 5_physics/*.h)
-add_executable(5_PHYSICS ${SOURCES})
-target_include_directories(5_PHYSICS SYSTEM PRIVATE ${SFML_INCS} ${B2D_INCS})
-target_link_libraries(5_PHYSICS Box2D sfml-graphics)
-set(EXECUTABLES ${EXECUTABLES} PRACTICAL_5_PHYSICS)
+target_include_directories(sourceCode SYSTEM PRIVATE ${SFML_INCS} ${B2D_INCS})
+target_link_libraries(sourceCode Box2D sfml-graphics)

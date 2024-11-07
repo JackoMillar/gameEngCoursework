@@ -15,6 +15,7 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${OUTPUT_DIRECTORY})
 add_subdirectory("lib/sfml")
 set(SFML_INCS "lib/sfml/include")
 link_directories("${CMAKE_BINARY_DIR}/lib/sfml/lib")
+link_directories("${CMAKE_BINARY_DIR}/lib/b2d/lib")
 
 #### Source Game ####
 file(GLOB_RECURSE SOURCES sourceCode/*.cpp sourceCode/*.h)

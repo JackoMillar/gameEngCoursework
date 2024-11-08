@@ -4,8 +4,21 @@
 using namespace sf;
 using namespace std;
 
-void Load() {
+//constant to store font for project
+const Font font = Font.loadFromFile("res/fonts/RobotoMono-Regular.ttf");
 
+//function for player being on main menu
+void menu(){
+    Text title = new text("Main Menu", font, 30);
+    Text normal = new text("Normal Mode", font, 20);
+    Text endless = new text("Endless Mode (Coming Soon)", font, 20);
+    Text settings = new text("Settings", font, 20);
+    Text exit = new text("Close Game", font, 20);
+}
+
+
+void Load() {
+    menu();
 }
 
 void Update(RenderWindow& window) {

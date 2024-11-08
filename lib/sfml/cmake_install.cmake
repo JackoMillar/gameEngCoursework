@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml
+# Install script for directory: C:/Users/danie/Games-Engineering/lib/sfml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Games_Engineering_Coursework")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Games_Engineering")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,34 +33,34 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/danie/Games-Engineering/lib/sfml/include" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.inl$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/lib" FILES_MATCHING REGEX "/[^/]*\\.pdb$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE DIRECTORY FILES "C:/Users/danie/Games-Engineering/lib/sfml/lib" FILES_MATCHING REGEX "/[^/]*\\.pdb$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/license.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/license.md")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/readme.md")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/readme.md")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE DIRECTORY FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/extlibs/bin/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE DIRECTORY FILES "C:/Users/danie/Games-Engineering/lib/sfml/extlibs/bin/x64/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE DIRECTORY FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/extlibs/libs-msvc-universal/x64/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE DIRECTORY FILES "C:/Users/danie/Games-Engineering/lib/sfml/extlibs/libs-msvc-universal/x64/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets.cmake"
-         "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets.cmake")
+         "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML/SFMLSharedTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -73,32 +73,32 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-debug.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-minsizerel.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-minsizerel.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-relwithdebinfo.cmake")
   endif()
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES "C:/Users/danie/Games-Engineering/lib/sfml/CMakeFiles/Export/3937c6824958577f216dad0a66bc6149/SFMLSharedTargets-release.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SFML" TYPE FILE FILES
-    "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/SFMLConfig.cmake"
-    "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/SFMLConfigDependencies.cmake"
-    "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/SFMLConfigVersion.cmake"
+    "C:/Users/danie/Games-Engineering/lib/sfml/SFMLConfig.cmake"
+    "C:/Users/danie/Games-Engineering/lib/sfml/SFMLConfigDependencies.cmake"
+    "C:/Users/danie/Games-Engineering/lib/sfml/SFMLConfigVersion.cmake"
     )
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/cmake_install.cmake")
 
 endif()
 

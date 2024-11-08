@@ -1,4 +1,4 @@
 # CMake generation dependency list for this directory.
-C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/cmake/Modules/FindFreetype.cmake
-C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Graphics/CMakeLists.txt
-C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/tools/windows/resource.rc.in
+C:/Users/danie/Games-Engineering/lib/sfml/cmake/Modules/FindFreetype.cmake
+C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Graphics/CMakeLists.txt
+C:/Users/danie/Games-Engineering/lib/sfml/tools/windows/resource.rc.in

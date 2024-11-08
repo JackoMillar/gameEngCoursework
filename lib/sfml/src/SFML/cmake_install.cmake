@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML
+# Install script for directory: C:/Users/danie/Games-Engineering/lib/sfml/src/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Games_Engineering_Coursework")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Games_Engineering")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,12 +34,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/System/cmake_install.cmake")
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Main/cmake_install.cmake")
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Window/cmake_install.cmake")
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Network/cmake_install.cmake")
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Graphics/cmake_install.cmake")
-  include("C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework/lib/sfml/src/SFML/Audio/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/System/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Main/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Window/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Network/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Graphics/cmake_install.cmake")
+  include("C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/Audio/cmake_install.cmake")
 
 endif()
 

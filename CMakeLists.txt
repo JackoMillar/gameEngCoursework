@@ -25,13 +25,13 @@ add_custom_target(copy_resources ALL COMMAND ${CMAKE_COMMAND}
 
 #### Add External Dependencies ####
 # SFML - graphics library
-add_subdirectory("C:/Users/Maja/Documents/games/code/lib/sfml" EXCLUDE_FROM_ALL)
+add_subdirectory("lib/sfml" EXCLUDE_FROM_ALL)
 #include_directories("lib/sfml/include")
 set(SFML_INCS "lib/sfml/include")
 link_directories("${CMAKE_BINARY_DIR}/lib/sfml/lib")
 
 # B2D - Box2D phyics library
-add_subdirectory("C:/Users/Maja/Documents/games/code/lib/b2d/Box2D" EXCLUDE_FROM_ALL)
+add_subdirectory("lib/b2d/Box2D" EXCLUDE_FROM_ALL)
 #include_directories("lib/b2d/Box2D/")
 set(B2D_INCS "lib/b2d/Box2D/")
 link_directories("${CMAKE_BINARY_DIR}/lib/sfml/lib")

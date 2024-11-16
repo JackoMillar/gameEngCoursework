@@ -436,7 +436,6 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio
 
-/lib
-/out
-/out/build
-\out
+/lib/sfml/*
+/lib/b2d/*
+

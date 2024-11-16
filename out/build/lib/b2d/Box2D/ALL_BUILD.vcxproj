@@ -25,9 +25,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F95D40A5-13BC-3D38-AEB7-2E894D93EDB0}</ProjectGuid>
+    <ProjectGuid>{5B7A78E2-8D05-3F22-BE8D-AFD887770B3F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -69,7 +69,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -79,7 +79,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -89,7 +89,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -99,7 +99,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Maja\Documents\games\code\lib\b2d\Box2D\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/b2d/Box2D/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,11 +121,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/b2d/Box2D/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -134,11 +134,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/b2d/Box2D/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -147,11 +147,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/b2d/Box2D/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -160,21 +160,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\ZERO_CHECK.vcxproj">
-      <Project>{C6D8B53C-1BA7-30C3-B25D-56C80003FE15}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\ZERO_CHECK.vcxproj">
+      <Project>{64AC4A8D-ACE2-3D45-AC32-2F74866EE458}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\Box2D.vcxproj">
-      <Project>{73C9B448-8966-39F3-9D27-947FD710DCD1}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\Box2D.vcxproj">
+      <Project>{1BA6D25D-CF25-32F3-B934-61E20653E30E}</Project>
       <Name>Box2D</Name>
     </ProjectReference>
   </ItemGroup>

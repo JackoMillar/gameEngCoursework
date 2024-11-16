@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Maja/Documents/games/code
+# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Users/Maja/Documents/games/gameEngCoursework/out/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

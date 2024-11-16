@@ -1,36 +1,36 @@
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/copy_resources.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/lib_engine.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/lib_tile_level_loader.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/lib_ecm.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/PRACTICAL_7_PLATFORMER.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/CMakeFiles/ALL_BUILD.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/System/CMakeFiles/sfml-system.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/System/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/System/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Main/CMakeFiles/sfml-main.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Main/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Main/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Window/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Window/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Network/CMakeFiles/sfml-network.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Network/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Network/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/Box2D.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/PACKAGE.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/INSTALL.dir
-C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/b2d/Box2D/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/copy_resources.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/lib_engine.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/lib_tile_level_loader.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/lib_ecm.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/PRACTICAL_7_PLATFORMER.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/CMakeFiles/ALL_BUILD.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/System/CMakeFiles/sfml-system.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/System/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/System/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Main/CMakeFiles/sfml-main.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Main/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Main/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Window/CMakeFiles/sfml-window.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Window/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Window/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Network/CMakeFiles/sfml-network.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Network/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Network/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Graphics/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/sfml-audio.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/Box2D.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/PACKAGE.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/INSTALL.dir
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/b2d/Box2D/CMakeFiles/ALL_BUILD.dir

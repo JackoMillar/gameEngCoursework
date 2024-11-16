@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Maja/Documents/games/code/lib/b2d/Box2D
+# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

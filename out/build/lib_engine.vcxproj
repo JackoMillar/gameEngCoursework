@@ -22,9 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{02E54B31-5B80-35AE-9576-852FC6997B9B}</ProjectGuid>
+    <ProjectGuid>{5188D0FD-6502-3A0C-98A1-4E949B1BFE24}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>lib_engine</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_engine.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">lib_engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_engine.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">lib_engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_engine.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">lib_engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_engine.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">lib_engine</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -100,10 +100,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -139,10 +139,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -155,7 +155,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -178,10 +178,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -194,7 +194,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -216,10 +216,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\SYSTEM;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\b2d\Box2D;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -231,11 +231,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Maja\Documents\games\code\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -243,12 +243,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -256,12 +256,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -269,12 +269,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -282,63 +282,63 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\engine\engine.cpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\engine\engine.h" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\engine\system_physics.cpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\engine\system_physics.h" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\engine\system_renderer.cpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\engine\system_renderer.h" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\engine\system_resources.cpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\engine\system_resources.h" />
-    <None Include="C:\Users\Maja\Documents\games\code\res\fonts\RobotoMono-Regular.ttf">
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\engine.cpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\engine.h" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_physics.cpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_physics.h" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_renderer.cpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_renderer.h" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_resources.cpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\engine\system_resources.h" />
+    <None Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\res\fonts\RobotoMono-Regular.ttf">
     </None>
-    <None Include="C:\Users\Maja\Documents\games\code\res\level_1.txt">
+    <None Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\res\level_1.txt">
     </None>
-    <None Include="C:\Users\Maja\Documents\games\code\res\level_2.txt">
+    <None Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\res\level_2.txt">
     </None>
-    <None Include="C:\Users\Maja\Documents\games\code\res\level_3.txt">
+    <None Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\res\level_3.txt">
     </None>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib_maths\maths.h" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths\maths.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\ZERO_CHECK.vcxproj">
-      <Project>{C6D8B53C-1BA7-30C3-B25D-56C80003FE15}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\ZERO_CHECK.vcxproj">
+      <Project>{64AC4A8D-ACE2-3D45-AC32-2F74866EE458}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\Box2D.vcxproj">
-      <Project>{73C9B448-8966-39F3-9D27-947FD710DCD1}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\b2d\Box2D\Box2D.vcxproj">
+      <Project>{1BA6D25D-CF25-32F3-B934-61E20653E30E}</Project>
       <Name>Box2D</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib_ecm.vcxproj">
-      <Project>{19CA890F-F054-31F1-93D1-64309FA2D736}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib_ecm.vcxproj">
+      <Project>{F26A98C3-64CF-3238-A655-04082D5CC11F}</Project>
       <Name>lib_ecm</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib_tile_level_loader.vcxproj">
-      <Project>{0FA39358-DE91-30BE-AF3C-549E8984485B}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib_tile_level_loader.vcxproj">
+      <Project>{05AD575D-1CB5-398E-8B30-2F87E1E27099}</Project>
       <Name>lib_tile_level_loader</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\sfml-audio.vcxproj">
-      <Project>{696D1F0E-BBE4-3034-A309-A8A7AAD00991}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{A7363455-1392-382E-982E-384670826D2A}</Project>
       <Name>sfml-audio</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{C77AC3A7-3DA6-37D8-A4C7-3D0CED0A58CF}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{961DD046-6B4F-3C17-9829-B5EE8E26051D}</Project>
       <Name>sfml-graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
-      <Project>{B84B0A1F-39F9-33F7-A2C1-3C9727F1CFAB}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{8F20E8C2-0BED-30DC-A5B3-8E455293B9E5}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{0D241BB4-9F6F-341C-9925-29AF16EF9350}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{E54D5028-7B46-3F7F-BC16-40775FD5CB96}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>

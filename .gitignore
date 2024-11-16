@@ -439,3 +439,4 @@ FodyWeavers.xsd
 /lib
 /out
 /out/build
+\out

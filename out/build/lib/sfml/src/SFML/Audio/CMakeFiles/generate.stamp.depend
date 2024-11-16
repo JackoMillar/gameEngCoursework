@@ -2,7 +2,7 @@
 C:/Program Files/CMake/share/cmake-3.30/Modules/FindOpenAL.cmake
 C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
 C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
-C:/Users/Maja/Documents/games/code/lib/sfml/cmake/Modules/FindFLAC.cmake
-C:/Users/Maja/Documents/games/code/lib/sfml/cmake/Modules/FindVORBIS.cmake
-C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Audio/CMakeLists.txt
-C:/Users/Maja/Documents/games/code/lib/sfml/tools/windows/resource.rc.in
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/cmake/Modules/FindFLAC.cmake
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/cmake/Modules/FindVORBIS.cmake
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Audio/CMakeLists.txt
+C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/tools/windows/resource.rc.in

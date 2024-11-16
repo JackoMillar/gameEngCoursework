@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib_ecm\ecm.cpp">
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm\ecm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib_ecm\ecm.h">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_ecm\ecm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib_maths\maths.h">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_maths\maths.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Maja\Documents\games\code\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{56549A9B-D531-373E-957E-3BF05A4D7F24}</UniqueIdentifier>
+      <UniqueIdentifier>{CD9F05E3-CD53-316C-87BA-56607419538F}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{B83DE70B-B03A-39D4-BEB1-F1C6B39B3E1B}</UniqueIdentifier>
+      <UniqueIdentifier>{763C6BB4-33F3-3C56-ADF8-625F16FBDECC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

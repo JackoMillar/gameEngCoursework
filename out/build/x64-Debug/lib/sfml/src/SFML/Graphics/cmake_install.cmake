@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Graphics
+# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Graphics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Maja/Documents/games/code/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,10 +33,10 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "devel" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/Maja/Documents/games/code/out/build/x64-Debug/lib/sfml/lib/sfml-graphics-d.lib")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/x64-Debug/lib/sfml/lib/sfml-graphics-d.lib")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "bin" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/Maja/Documents/games/code/out/build/x64-Debug/bin/sfml-graphics-d-2.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/x64-Debug/bin/sfml-graphics-d-2.dll")
 endif()
 

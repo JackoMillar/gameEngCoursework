@@ -22,9 +22,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{696D1F0E-BBE4-3034-A309-A8A7AAD00991}</ProjectGuid>
+    <ProjectGuid>{A7363455-1392-382E-982E-384670826D2A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
     <ProjectName>sfml-audio</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\bin\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-audio.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sfml-audio-d-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\bin\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-audio.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sfml-audio-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\bin\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-audio.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">sfml-audio-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\bin\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-audio.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">sfml-audio-2</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -87,8 +87,8 @@
   <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -111,10 +111,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;CMAKE_INTDIR=\"Debug\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -122,13 +122,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\..\..\lib\Debug\sfml-system-d.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\lib\Debug\sfml-system-d.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/Debug/sfml-audio-d.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/Debug/sfml-audio.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/Debug/sfml-audio-d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/Debug/sfml-audio.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -137,8 +137,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -162,10 +162,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;CMAKE_INTDIR=\"Release\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -173,13 +173,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\..\..\lib\Release\sfml-system.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\lib\Release\sfml-system.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/Release/sfml-audio.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/Release/sfml-audio.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/Release/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/Release/sfml-audio.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -188,8 +188,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -213,10 +213,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;CMAKE_INTDIR=\"MinSizeRel\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -224,13 +224,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\..\..\lib\MinSizeRel\sfml-system.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\lib\MinSizeRel\sfml-system.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/MinSizeRel/sfml-audio.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/MinSizeRel/sfml-audio.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/MinSizeRel/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/MinSizeRel/sfml-audio.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -239,8 +239,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Maja/Documents/games/code/lib/sfml/extlibs/headers"</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/minimp3" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers/AL" /external:I "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/extlibs/headers"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -263,10 +263,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;OV_EXCLUDE_STATIC_CALLBACKS;FLAC__NO_DLL;CMAKE_INTDIR=\"RelWithDebInfo\";SFML_AUDIO_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib\sfml\src;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\minimp3;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers\AL;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\minimp3;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers\AL;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -274,13 +274,13 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <Link>
-      <AdditionalDependencies>..\..\..\lib\RelWithDebInfo\sfml-system.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Maja\Documents\games\code\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>..\..\..\lib\RelWithDebInfo\sfml-system.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\openal32.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisenc.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbisfile.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\vorbis.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\ogg.lib;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\extlibs\libs-msvc-universal\x64\flac.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/RelWithDebInfo/sfml-audio.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/RelWithDebInfo/sfml-audio.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/RelWithDebInfo/sfml-audio.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/lib/RelWithDebInfo/sfml-audio.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -288,11 +288,11 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,12 +300,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -313,12 +313,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -326,12 +326,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/sfml/src/SFML/Audio/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2" "-BC:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build" --check-stamp-file "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/build/lib/sfml/src/SFML/Audio/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -339,13 +339,13 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Maja\Documents\games\code\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenAL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindFLAC.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\cmake\Modules\FindVORBIS.cmake;C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\tools\windows\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\ALCheck.cpp">
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\ALCheck.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -363,8 +363,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\ALCheck.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\AlResource.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\ALCheck.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\AlResource.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -382,8 +382,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\AlResource.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\AudioDevice.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\AlResource.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\AudioDevice.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -401,9 +401,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\AudioDevice.hpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\Export.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\Listener.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\AudioDevice.hpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\Export.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\Listener.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -421,8 +421,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\Listener.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\Music.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\Listener.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\Music.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -440,8 +440,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\Music.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\Sound.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\Music.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\Sound.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -459,8 +459,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\Sound.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundBuffer.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\Sound.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundBuffer.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -478,8 +478,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundBuffer.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundBufferRecorder.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundBuffer.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundBufferRecorder.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -497,8 +497,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundBufferRecorder.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\InputSoundFile.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundBufferRecorder.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\InputSoundFile.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -516,8 +516,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\InputSoundFile.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\OutputSoundFile.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\InputSoundFile.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\OutputSoundFile.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -535,8 +535,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\OutputSoundFile.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundRecorder.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\OutputSoundFile.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundRecorder.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -554,8 +554,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundRecorder.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundSource.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundRecorder.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundSource.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -573,8 +573,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundSource.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundStream.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundSource.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundStream.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -592,8 +592,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundStream.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileFactory.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundStream.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileFactory.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -611,11 +611,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundFileFactory.hpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundFileFactory.inl" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundFileReader.hpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderFlac.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderFlac.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundFileFactory.hpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundFileFactory.inl" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundFileReader.hpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderFlac.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderFlac.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -633,8 +633,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderMp3.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderMp3.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderMp3.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderMp3.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -652,8 +652,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderOgg.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderOgg.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderOgg.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderOgg.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -671,8 +671,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderWav.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileReaderWav.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderWav.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileReaderWav.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -690,9 +690,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\include\SFML\Audio\SoundFileWriter.hpp" />
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterFlac.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterFlac.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\include\SFML\Audio\SoundFileWriter.hpp" />
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterFlac.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterFlac.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -710,8 +710,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterOgg.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterOgg.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterOgg.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterOgg.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -729,8 +729,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterWav.hpp" />
-    <ClCompile Include="C:\Users\Maja\Documents\games\code\lib\sfml\src\SFML\Audio\SoundFileWriterWav.cpp">
+    <ClInclude Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterWav.hpp" />
+    <ClCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib\sfml\src\SFML\Audio\SoundFileWriterWav.cpp">
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalOptions) /w14242 /w14254 /w14263 /w14265 /w14287 /w14296 /w14311 /w14545 /w14546 /w14547 /w14549 /w14555 /w14619 /w14640 /w14826 /w14905 /w14906 /w14928</AdditionalOptions>
       <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4996;4068;4505;4800;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4289</TreatSpecificWarningsAsErrors>
@@ -748,17 +748,17 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <TreatSpecificWarningsAsErrors Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">4289</TreatSpecificWarningsAsErrors>
       <WarningLevel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Level4</WarningLevel>
     </ClCompile>
-    <ResourceCompile Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\sfml-audio.rc" />
+    <ResourceCompile Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\Audio\sfml-audio.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\ZERO_CHECK.vcxproj">
-      <Project>{C6D8B53C-1BA7-30C3-B25D-56C80003FE15}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\ZERO_CHECK.vcxproj">
+      <Project>{64AC4A8D-ACE2-3D45-AC32-2F74866EE458}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
-      <Project>{B84B0A1F-39F9-33F7-A2C1-3C9727F1CFAB}</Project>
+    <ProjectReference Include="C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{8F20E8C2-0BED-30DC-A5B3-8E455293B9E5}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
   </ItemGroup>

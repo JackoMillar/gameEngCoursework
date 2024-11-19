@@ -1,0 +1,16 @@
+﻿  Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt
+  engine.cpp
+  system_physics.cpp
+  system_renderer.cpp
+  system_resources.cpp
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(37,45): warning C4244: 'argument': conversion from 'const _Ty' to 'sf::Uint8', possible loss of data
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(37,45): warning C4244:         with
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(37,45): warning C4244:         [
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(37,45): warning C4244:             _Ty=float
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(37,45): warning C4244:         ]
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(39,39): warning C4244: 'argument': conversion from 'const _Ty' to 'sf::Uint8', possible loss of data
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(39,39): warning C4244:         with
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(39,39): warning C4244:         [
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(39,39): warning C4244:             _Ty=float
+C:\Users\Maja\Documents\games\code\engine\engine.cpp(39,39): warning C4244:         ]
+  lib_engine.vcxproj -> C:\Users\Maja\Documents\games\gameEngCoursework\out\build\Debug\lib_engine.lib

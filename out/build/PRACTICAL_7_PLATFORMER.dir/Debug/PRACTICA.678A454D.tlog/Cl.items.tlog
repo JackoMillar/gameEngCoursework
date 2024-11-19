@@ -1,0 +1,14 @@
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_actor_movement.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_actor_movement.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_bullet.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_bullet.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_ai.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_enemy_ai.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_turret.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_enemy_turret.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_hut_player.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_hut_player.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_physics.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_player_physics.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_player_physics.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_sprite.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_sprite.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_text.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\cmp_text.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\platformer_main.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\platformer_main.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level1.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\scene_level1.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level2.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\scene_level2.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level3.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\scene_level3.obj
+C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_menu.cpp;C:\Users\Maja\Documents\games\code\out\build\PRACTICAL_7_PLATFORMER.dir\Debug\scene_menu.obj

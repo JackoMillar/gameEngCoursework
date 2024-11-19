@@ -1,22 +1,22 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (lib_tile_level_loader.dir\Debug\) contains files shared from another project (lib_tile_level_loader.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (lib_tile_level_loader.dir\Debug\) contains files shared from another project (lib_tile_level_loader.vcxproj, lib_tile_level_loader.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Building Custom Rule C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/CMakeLists.txt
   LevelSystem.cpp
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         with
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         [
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:             T=size_t
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         ]
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         and
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         [
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:             T=float
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244:         ]
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         with
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         [
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:             T=size_t
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         ]
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         and
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         [
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:             T=float
-C:\Users\Maja\Documents\games\code\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244:         ]
-  lib_tile_level_loader.vcxproj -> C:\Users\Maja\Documents\games\gameEngCoursework\out\build\Debug\lib_tile_level_loader.lib
+C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader\LevelSystem.cpp(193,26): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=size_t
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lib_tile_level_loader\LevelSystem.cpp(193,21): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=size_t
+          ]
+          and
+          [
+              T=float
+          ]
+  lib_tile_level_loader.vcxproj -> C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\Debug\lib_tile_level_loader.lib

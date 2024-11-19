@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Maja/Documents/games/code/lib/b2d/Box2D
+# Install script for directory: C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/lib/b2d/Box2D
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/Maja/Documents/games/code/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/Jack Millar/Documents/GitHub/gameEngCoursework2/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

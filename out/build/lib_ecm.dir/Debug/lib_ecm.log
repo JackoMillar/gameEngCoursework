@@ -1,8 +1,1 @@
-﻿  Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt
-  ecm.cpp
-C:\Users\Maja\Documents\games\code\lib_ecm\ecm.cpp(68,28): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Maja\Documents\games\code\lib_ecm\ecm.cpp(76,5): warning C4297: 'Entity::~Entity': function assumed not to throw an exception but does
-      C:\Users\Maja\Documents\games\code\lib_ecm\ecm.cpp(76,5):
-      destructor or deallocator has a (possibly implicit) non-throwing exception specification
-  
-  lib_ecm.vcxproj -> C:\Users\Maja\Documents\games\gameEngCoursework\out\build\Debug\lib_ecm.lib
+﻿  lib_ecm.vcxproj -> C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\Debug\lib_ecm.lib

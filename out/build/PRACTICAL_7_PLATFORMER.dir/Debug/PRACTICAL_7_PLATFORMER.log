@@ -1,26 +1,22 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (PRACTICAL_7_PLATFORMER.dir\Debug\) contains files shared from another project (PRACTICAL_7_PLATFORMER.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt
-  cmp_actor_movement.cpp
-  cmp_bullet.cpp
-  cmp_enemy_ai.cpp
-  cmp_enemy_turret.cpp
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_bullet.cpp(6,16): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  cmp_hut_player.cpp
-  cmp_physics.cpp
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_turret.cpp(10,16): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_turret.cpp(16,16): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  cmp_player_physics.cpp
-  cmp_sprite.cpp
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp(36,30): warning C4305: '=': truncation from 'double' to 'float32'
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp(41,30): warning C4305: '=': truncation from 'double' to 'float32'
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp(134,29): warning C4114: same type qualifier used more than once
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp(135,31): warning C4114: same type qualifier used more than once
-C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp(112,1): warning C4700: uninitialized local variable 'bc' used
-  cmp_text.cpp
-  platformer_main.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (PRACTICAL_7_PLATFORMER.dir\Debug\) contains files shared from another project (PRACTICAL_7_PLATFORMER.vcxproj, PRACTICAL_7_PLATFORMER.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (lib_tile_level_loader.dir\Debug\) contains files shared from another project (lib_tile_level_loader.vcxproj, lib_tile_level_loader.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   scene_level1.cpp
-  scene_level2.cpp
-  scene_level3.cpp
-  scene_menu.cpp
-C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level3.cpp(71,15): warning C4244: '-=': conversion from 'const double' to 'float', possible loss of data
-  PRACTICAL_7_PLATFORMER.vcxproj -> C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\Debug\PRACTICAL_7_PLATFORMER.exe
+C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lab_7_platformer\scenes\scene_level1.cpp(22,89): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\lab_7_platformer\scenes\scene_level1.cpp(22,62): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+  PRACTICAL_7_PLATFORMER.vcxproj -> C:\Users\Jack Millar\Documents\GitHub\gameEngCoursework2\out\build\bin\Debug\PRACTICAL_7_PLATFORMER.exe

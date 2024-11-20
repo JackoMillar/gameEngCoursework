@@ -2,7 +2,10 @@
 #include <system_renderer.h>
 #include <system_resources.h>
 
-void TextComponent::update(double dt) {}
+void TextComponent::update(double dt) {
+  _text.setPosition(_parent->getPosition());
+  _text.setRotation((_parent->getRotation()) * (180.0f / 3.14159265358979323846f));
+}
 
 void TextComponent::render() { Renderer::queue(&_text); }
 

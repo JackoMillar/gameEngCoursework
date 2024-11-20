@@ -19,9 +19,8 @@ void MenuScene::Load() {
     //add icon to screen
     Texture iconfile;
     auto iconentity = makeEntity();
-        if (!iconfile.loadFromFile("res/images/icon.png")) {
-    cerr << "Failed to load spritesheet!" << std::endl;
-  }
+    if (!iconfile.loadFromFile("res/images/icon.png")) {
+    cerr << "Failed to load spritesheet!" << std::endl;}
     auto icon = iconentity->addComponent<SpriteComponent>();
     auto ptr = make_shared<Texture>(iconfile);
     icon->setTexure(ptr);

@@ -12,12 +12,10 @@ using namespace sf;
 void MenuScene::Load() {
   cout << "Menu Load \n";
   {
-    //add text to screen
-    auto txt = makeEntity();
-    auto t = txt->addComponent<TextComponent>(
-        "Circle: The Last Edgebender\nPress Space to Start");
-    //NOT CURRENTLY WORKING
-    txt->setPosition(Vector2f(Engine::getWindowSize().x * .45f, .0f)); 
+    //add title to screen
+    auto title = makeEntity();
+    auto t = title->addComponent<TextComponent>("Circle: The Last Edgebender...");
+    title->setPosition(Vector2f(Engine::getWindowSize().x * .315f, Engine::getWindowSize().y * .05f));
     //add icon to screen
     Texture iconfile;
     auto iconentity = makeEntity();
@@ -28,6 +26,10 @@ void MenuScene::Load() {
     auto ptr = make_shared<Texture>(iconfile);
     icon->setTexure(ptr);
     iconentity->setPosition(Vector2f(Engine::getWindowSize().x * .25f, Engine::getWindowSize().y * .15f));
+    //add prompt to screen
+    auto prompt = makeEntity();
+    auto p = prompt->addComponent<TextComponent>("Press the space bar\n          to start!");
+    prompt->setPosition(Vector2f(Engine::getWindowSize().x * .385f, Engine::getWindowSize().y * .58f));
   }
   setLoaded(true);
 }

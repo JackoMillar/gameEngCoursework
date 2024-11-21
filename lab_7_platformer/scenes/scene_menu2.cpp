@@ -14,7 +14,7 @@ void Menu2Scene::Load() {
   {
     //add title to screen
     auto title = makeEntity();
-    auto t = title->addComponent<TextComponent>("THIS IS THE MAIN MENU\n(jack is a lil crazy ngl)");
+    auto t = title->addComponent<TextComponent>("Circle: The Last Edgebender...");
     title->setPosition(Vector2f(Engine::getWindowSize().x * .315f, Engine::getWindowSize().y * .05f));
     //add icon to screen
     Texture iconfile;
@@ -24,11 +24,23 @@ void Menu2Scene::Load() {
     auto icon = iconentity->addComponent<SpriteComponent>();
     auto ptr = make_shared<Texture>(iconfile);
     icon->setTexure(ptr);
-    iconentity->setPosition(Vector2f(Engine::getWindowSize().x * .25f, Engine::getWindowSize().y * .15f));
-    //add prompt to screen
-    auto prompt = makeEntity();
-    auto p = prompt->addComponent<TextComponent>("Press the space bar\n          to start!");
-    prompt->setPosition(Vector2f(Engine::getWindowSize().x * .385f, Engine::getWindowSize().y * .58f));
+    iconentity->setPosition(Vector2f(Engine::getWindowSize().x * .25f, Engine::getWindowSize().y * .1f));
+    //add Play Game prompt to screen
+    auto play = makeEntity();
+    auto p = play->addComponent<TextComponent>("Play Game!\n   (Space)");
+    play->setPosition(Vector2f(Engine::getWindowSize().x * .1f, Engine::getWindowSize().y * .85f));
+    //add Endless prompt to screen
+    auto endless = makeEntity();
+    auto e = endless->addComponent<TextComponent>("Endless Mode!\n(Coming Soon)");
+    endless->setPosition(Vector2f(Engine::getWindowSize().x * .3f, Engine::getWindowSize().y * .85f));
+    //add Settings prompt to screen
+    auto settings = makeEntity();
+    auto s = settings->addComponent<TextComponent>("      Settings!\n(Coming Soon)");
+    settings->setPosition(Vector2f(Engine::getWindowSize().x * .55f, Engine::getWindowSize().y * .85f));
+    //add Quit Game prompt to screen
+    auto quit = makeEntity();
+    auto q = quit->addComponent<TextComponent>("Quit Game!\n   (Escape)");
+    quit->setPosition(Vector2f(Engine::getWindowSize().x * .75f, Engine::getWindowSize().y * .85f));
   }
   setLoaded(true);
 }

@@ -1,5 +1,6 @@
 #include "cmp_player_physics.h"
 #include "system_physics.h"
+#include "cmp_player_abilities.h"
 #include <LevelSystem.h>
 #include <SFML/Window/Keyboard.hpp>
 
@@ -85,6 +86,7 @@ void PlayerPhysicsComponent::update(double dt) {
 
     const auto pos = _parent->getPosition();
 
+    //checks to see where the player is at
     _grounded = isGrounded();
     _walled = isWalled();
     _roofed = isRoofed();
@@ -94,6 +96,7 @@ void PlayerPhysicsComponent::update(double dt) {
         teleport(ls::getTilePosition(ls::findTiles(ls::START)[0]));
     }
 
+    // Collision with roof/wall/ground
     if (_grounded || _walled || _roofed || doubleJump) {
         if (_grounded || doubleJump) {
             if (_grounded)
@@ -159,6 +162,7 @@ void PlayerPhysicsComponent::update(double dt) {
         }
     }
 
+    // Left/Right Jumps
     if ((Keyboard::isKeyPressed(Keyboard::Left) ||
         Keyboard::isKeyPressed(Keyboard::Right))
         && _grounded || doubleJump) {
@@ -173,7 +177,9 @@ void PlayerPhysicsComponent::update(double dt) {
                 printf("DAMPRIGHT");
             }
                 
-            impulse({ static_cast<float>(dt * _groundspeed * 30), 0 });
+            setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+            teleport(Vector2f(pos.x, pos.y - 5.0f));
+            impulse(Vector2f(10.f, 0));  // Positive X impulse for moving right
             printf("RIGHT\n");
 
             if (Keyboard::isKeyPressed(Keyboard::Up)) {
@@ -199,7 +205,10 @@ void PlayerPhysicsComponent::update(double dt) {
                 printf("DAMPLEFT");
             }
                
-                impulse({ -static_cast<float>(dt * _groundspeed * 30), 0 });
+                // Apply horizontal impulse to the left direction
+                setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+                teleport(Vector2f(pos.x, pos.y - 5.0f));
+                impulse(Vector2f(-10.f, 0));  // Negative X impulse for moving left
                 printf("LEFT\n");
 
                 if (Keyboard::isKeyPressed(Keyboard::Up)) {

@@ -17,8 +17,14 @@ void menu(){
 }
 
 
+Player player;
+
+const int gameWidth = 800;
+const int gameHeight = 600;
+
 void Load() {
-    menu();
+    // Set player to middle of the screen
+    player.setPosition(Vector2f(gameWidth / 2.f, gameHeight / 2.f));    menu();
 }
 
 void Update(RenderWindow& window) {
@@ -38,14 +44,16 @@ void Update(RenderWindow& window) {
     if (Keyboard::isKeyPressed(Keyboard::Escape)) {
         window.close();
     }
+    player.Update(dt);
+
 }
 
 void Render(RenderWindow& window) {
-    // Draw Everything
+    player.Render(window);
 }
 
 int main() {
-    RenderWindow window(VideoMode(800, 600), "Ball!");
+    RenderWindow window(VideoMode(gameWidth, gameHeight), "Circle: The Last Edgebender");
     Load();
     while (window.isOpen()) {
         window.clear();

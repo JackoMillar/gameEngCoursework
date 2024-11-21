@@ -1,4 +1,4 @@
-#include "scene_menu.h"
+#include "scene_menu2.h"
 #include "../components/cmp_text.h"
 #include "../game.h"
 #include <SFML/Window/Keyboard.hpp>
@@ -9,12 +9,12 @@
 using namespace std;
 using namespace sf;
 
-void MenuScene::Load() {
+void Menu2Scene::Load() {
   cout << "Menu Load \n";
   {
     //add title to screen
     auto title = makeEntity();
-    auto t = title->addComponent<TextComponent>("Circle: The Last Edgebender...");
+    auto t = title->addComponent<TextComponent>("THIS IS THE MAIN MENU\n(jack is a lil crazy ngl)");
     title->setPosition(Vector2f(Engine::getWindowSize().x * .315f, Engine::getWindowSize().y * .05f));
     //add icon to screen
     Texture iconfile;
@@ -27,17 +27,17 @@ void MenuScene::Load() {
     iconentity->setPosition(Vector2f(Engine::getWindowSize().x * .25f, Engine::getWindowSize().y * .15f));
     //add prompt to screen
     auto prompt = makeEntity();
-    auto p = prompt->addComponent<TextComponent>("Press Enter\n  to start!");
-    prompt->setPosition(Vector2f(Engine::getWindowSize().x * .44f, Engine::getWindowSize().y * .58f));
+    auto p = prompt->addComponent<TextComponent>("Press the space bar\n          to start!");
+    prompt->setPosition(Vector2f(Engine::getWindowSize().x * .385f, Engine::getWindowSize().y * .58f));
   }
   setLoaded(true);
 }
 
-void MenuScene::Update(const double& dt) {
+void Menu2Scene::Update(const double& dt) {
   // cout << "Menu Update "<<dt<<"\n";
 
-  if (sf::Keyboard::isKeyPressed(Keyboard::Enter)) {
-    Engine::ChangeScene(&menu2);
+  if (sf::Keyboard::isKeyPressed(Keyboard::Space)) {
+    Engine::ChangeScene(&level1);
   }
 
   Scene::Update(dt);

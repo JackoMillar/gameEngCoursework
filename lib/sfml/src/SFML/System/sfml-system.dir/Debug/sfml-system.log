@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/Users/danie/Games-Engineering/lib/sfml/src/SFML/System/CMakeLists.txt
+  Clock.cpp
+  Err.cpp
+  Lock.cpp
+  Mutex.cpp
+  Sleep.cpp
+  String.cpp
+  Thread.cpp
+  ThreadLocal.cpp
+  Time.cpp
+  FileInputStream.cpp
+  MemoryInputStream.cpp
+  ClockImpl.cpp
+  MutexImpl.cpp
+  SleepImpl.cpp
+  ThreadImpl.cpp
+  ThreadLocalImpl.cpp
+  Generating Code...
+     Creating library C:/Users/danie/Games-Engineering/lib/sfml/lib/Debug/sfml-system-d.lib and object C:/Users/danie/Games-Engineering/lib/sfml/lib/Debug/sfml-system-d.exp
+  sfml-system.vcxproj -> C:\Users\danie\Games-Engineering\bin\Debug\sfml-system-d-2.dll

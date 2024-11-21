@@ -63,9 +63,9 @@ void Level2Scene::UnLoad() {
 void Level2Scene::Update(const double& dt) {
     // Check if the player has reached the end tile
     if (ls::getTileAt(player->getPosition()) == ls::END) {
-        Engine::ChangeScene((Scene*)&level2);
+        Engine::ChangeScene((Scene*)&level3);
     }
-
+    else{
     // Get current view and player position
     sf::View view = Engine::GetWindow().getView();
     sf::Vector2f playerPos = player->getPosition();
@@ -89,6 +89,7 @@ void Level2Scene::Update(const double& dt) {
 
     // Call the base update
     Scene::Update(dt);
+    }
 }
 
 

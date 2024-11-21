@@ -32,6 +32,7 @@ void Level1Scene::Load() {
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
 
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
+        player->addComponent<OnGroundAbilityComponent>();
     }
 
     // Add physics colliders to level tiles.
@@ -65,30 +66,31 @@ void Level1Scene::Update(const double& dt) {
     if (ls::getTileAt(player->getPosition()) == ls::END) {
         Engine::ChangeScene((Scene*)&level2);
     }
+    else{
+        // Get current view and player position
+        sf::View view = Engine::GetWindow().getView();
+        sf::Vector2f playerPos = player->getPosition();
 
-    // Get current view and player position
-    sf::View view = Engine::GetWindow().getView();
-    sf::Vector2f playerPos = player->getPosition();
+        // Calculate the bounds of the level in pixels
+        sf::Vector2f levelSize(ls::getWidth() * 40.f, ls::getHeight() * 40.f);
 
-    // Calculate the bounds of the level in pixels
-    sf::Vector2f levelSize(ls::getWidth() * 40.f, ls::getHeight() * 40.f);
+        // Get the vertical offset set in the level system
+        sf::Vector2f levelOffset = ls::getOffset();
 
-    // Get the vertical offset set in the level system
-    sf::Vector2f levelOffset = ls::getOffset();
+        // Get half the window size
+        sf::Vector2f halfWindowSize(Engine::getWindowSize().x / 2.f, Engine::getWindowSize().y / 2.f);
 
-    // Get half the window size
-    sf::Vector2f halfWindowSize(Engine::getWindowSize().x / 2.f, Engine::getWindowSize().y / 2.f);
+        // Clamp the view's center to the level bounds
+        float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
+        float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
 
-    // Clamp the view's center to the level bounds
-    float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
-    float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
+        // Update the view center
+        view.setCenter(clampedX, clampedY);
+        Engine::GetWindow().setView(view);
 
-    // Update the view center
-    view.setCenter(clampedX, clampedY);
-    Engine::GetWindow().setView(view);
-
-    // Call the base update
-    Scene::Update(dt);
+        // Call the base update
+        Scene::Update(dt);
+    }
 }
 
 

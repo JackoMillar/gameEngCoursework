@@ -18,6 +18,8 @@ static float loadingspinner = 0.f;
 static float loadingTime;
 static RenderWindow* _window;
 
+
+
 void Loading_update(float dt, const Scene* const scn) {
   //  cout << "Eng: Loading Screen\n";
   if (scn->isLoaded()) {
@@ -40,6 +42,7 @@ void Loading_render() {
   t.setPosition(Vcast<float>(Engine::getWindowSize()) * Vector2f(0.4f,0.3f));
   Renderer::queue(&t);
   Renderer::queue(&octagon);
+  
 }
 
 float frametimes[256] = {};
@@ -48,6 +51,7 @@ uint8_t ftc = 0;
 void Engine::Update() {
   static sf::Clock clock;
   float dt = clock.restart().asSeconds();
+
   {
     frametimes[++ftc] = dt;
     static string avg = _gameName + " FPS:";
@@ -82,11 +86,13 @@ void Engine::Render(RenderWindow& window) {
 void Engine::Start(unsigned int width, unsigned int height,
                    const std::string& gameName, Scene* scn) {
   RenderWindow window(VideoMode(width, height), gameName);
+  window.setVerticalSyncEnabled(true);
   _gameName = gameName;
   _window = &window;
   Renderer::initialise(window);
   Physics::initialise();
   ChangeScene(scn);
+  _window->setVerticalSyncEnabled(true);
   while (window.isOpen()) {
     Event event;
     while (window.pollEvent(event)) {
@@ -116,6 +122,10 @@ std::shared_ptr<Entity> Scene::makeEntity() {
   auto e = make_shared<Entity>(this);
   ents.list.push_back(e);
   return std::move(e);
+}
+
+std::vector<std::shared_ptr<Entity>>& Scene::getAllEntities() {
+    return ents.list;
 }
 
 void Engine::setVsync(bool b) { _window->setVerticalSyncEnabled(b); }

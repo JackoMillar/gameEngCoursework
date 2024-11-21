@@ -17,7 +17,6 @@ public:
 
   sf::Sprite& getSprite() const;
 
-
   void setTexure(std::shared_ptr<sf::Texture> tex);
 };
 

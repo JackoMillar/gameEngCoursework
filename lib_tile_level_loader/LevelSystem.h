@@ -23,6 +23,7 @@ public:
     END = 'e',
     WALL = 'w',
     ENEMY = 'n',
+    ENEMY2 = 'm',
     WAYPOINT = '+'
   };
 

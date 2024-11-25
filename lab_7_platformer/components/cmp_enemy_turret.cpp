@@ -5,6 +5,7 @@
 #include <SFML/Graphics/CircleShape.hpp>
 using namespace std;
 using namespace sf;
+//could use for enemy Triangle shooting
 
 void EnemyTurretComponent::update(double dt) {
   _firetime -= dt;

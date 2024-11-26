@@ -34,6 +34,41 @@ void Level1Scene::Load() {
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
     }
+    //creating enemies
+    {
+      //creating a triangle enemy
+      auto triEnemy = makeEntity();
+      triEnemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
+          Vector2f(24.f, 30.f));
+      auto s = triEnemy->addComponent<ShapeComponent>();
+      //setting the triangle enemy shape
+      s->setShape<sf::CircleShape>(18.f, 3);
+      s->getShape().setFillColor(Color::Yellow);
+      s->getShape().setOrigin(Vector2(18.f, 18.f));
+    }
+
+    {
+      //creating a square enemy
+      auto squareEnemy = makeEntity();
+      squareEnemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY2)[0]) +
+          Vector2f(24.f, 24.f));
+      auto s = squareEnemy->addComponent<ShapeComponent>();
+      //setting the square enemy shape
+      s->setShape<sf::RectangleShape>(Vector2f(30.f, 30.f));
+      s->getShape().setFillColor(Color::Blue);
+      s->getShape().setOrigin(Vector2(15.f, 15.f));
+    }
+
+  // Add physics colliders to level tiles.
+    {
+        auto walls = ls::findTiles(ls::WALL);
+        for (auto w : walls) {
+        auto pos = ls::getTilePosition(w);
+        pos += Vector2f(20.f, 20.f); //offset to center
+        auto e = makeEntity();
+        e->setPosition(pos);
+        e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
+    }
 
     // Add physics colliders to level tiles.
     {

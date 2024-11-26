@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7E4ABF00-8C0D-36FF-9262-316F8E9E49B1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>PRACTICAL_7_PLATFORMER</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PRACTICAL_7_PLATFORMER.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">PRACTICAL_7_PLATFORMER</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PRACTICAL_7_PLATFORMER.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">PRACTICAL_7_PLATFORMER</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PRACTICAL_7_PLATFORMER.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">PRACTICAL_7_PLATFORMER</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PRACTICAL_7_PLATFORMER.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">PRACTICAL_7_PLATFORMER</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin//$(Configuration)</LocalDebuggerWorkingDirectory>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\lib_engine.lib;Debug\lib_tile_level_loader.lib;Debug\lib_ecm.lib;Build\bin\Debug\Box2D.lib;lib\sfml\lib\Debug\sfml-graphics-d.lib;lib\sfml\lib\Debug\sfml-window-d.lib;lib\sfml\lib\Debug\sfml-audio-d.lib;lib\sfml\lib\Debug\sfml-system-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib;C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/Debug/PRACTICAL_7_PLATFORMER.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin/Debug/PRACTICAL_7_PLATFORMER.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\lib_engine.lib;Release\lib_tile_level_loader.lib;Release\lib_ecm.lib;Build\bin\Release\Box2D.lib;lib\sfml\lib\Release\sfml-graphics.lib;lib\sfml\lib\Release\sfml-window.lib;lib\sfml\lib\Release\sfml-audio.lib;lib\sfml\lib\Release\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib;C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/Release/PRACTICAL_7_PLATFORMER.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin/Release/PRACTICAL_7_PLATFORMER.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\lib_engine.lib;MinSizeRel\lib_tile_level_loader.lib;MinSizeRel\lib_ecm.lib;Build\bin\MinSizeRel\Box2D.lib;lib\sfml\lib\MinSizeRel\sfml-graphics.lib;lib\sfml\lib\MinSizeRel\sfml-window.lib;lib\sfml\lib\MinSizeRel\sfml-audio.lib;lib\sfml\lib\MinSizeRel\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib;C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/MinSizeRel/PRACTICAL_7_PLATFORMER.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin/MinSizeRel/PRACTICAL_7_PLATFORMER.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\Maja\Documents\games\code\engine;C:\Users\Maja\Documents\games\code\SYSTEM;C:\Users\Maja\Documents\games\code\lib\b2d\Box2D;C:\Users\Maja\Documents\games\code\lib_tile_level_loader;C:\Users\Maja\Documents\games\code\lib_maths;C:\Users\Maja\Documents\games\code\lib\sfml\include;C:\Users\Maja\Documents\games\code\lib_ecm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\lib_engine.lib;RelWithDebInfo\lib_tile_level_loader.lib;RelWithDebInfo\lib_ecm.lib;Build\bin\RelWithDebInfo\Box2D.lib;lib\sfml\lib\RelWithDebInfo\sfml-graphics.lib;lib\sfml\lib\RelWithDebInfo\sfml-window.lib;lib\sfml\lib\RelWithDebInfo\sfml-audio.lib;lib\sfml\lib\RelWithDebInfo\sfml-system.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib;C:/Users/Maja/Documents/games/gameEngCoursework/out/build/lib/sfml/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/RelWithDebInfo/PRACTICAL_7_PLATFORMER.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/Maja/Documents/games/gameEngCoursework/out/build/bin/RelWithDebInfo/PRACTICAL_7_PLATFORMER.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Maja\Documents\games\code\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Maja/Documents/games/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Maja/Documents/games/code -BC:/Users/Maja/Documents/games/gameEngCoursework/out/build --check-stamp-file C:/Users/Maja/Documents/games/gameEngCoursework/out/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeCXXCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeRCCompiler.cmake;C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\3.30.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Maja\Documents\games\gameEngCoursework\out\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_actor_movement.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_bullet.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_ai.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_turret.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_hut_player.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_player_physics.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_sprite.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_text.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\platformer_main.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level1.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level2.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level3.cpp" />
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_menu.cpp" />
+    <None Include="C:\Users\Maja\Documents\games\code\res\fonts\RobotoMono-Regular.ttf">
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_1.txt">
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_2.txt">
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_3.txt">
+    </None>
+    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib_maths\maths.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\ZERO_CHECK.vcxproj">
+      <Project>{C6D8B53C-1BA7-30C3-B25D-56C80003FE15}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\b2d\Box2D\Box2D.vcxproj">
+      <Project>{73C9B448-8966-39F3-9D27-947FD710DCD1}</Project>
+      <Name>Box2D</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\copy_resources.vcxproj">
+      <Project>{AEE02233-40ED-3554-AB0F-7E40B2FCE0AD}</Project>
+      <Name>copy_resources</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib_ecm.vcxproj">
+      <Project>{19CA890F-F054-31F1-93D1-64309FA2D736}</Project>
+      <Name>lib_ecm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib_engine.vcxproj">
+      <Project>{02E54B31-5B80-35AE-9576-852FC6997B9B}</Project>
+      <Name>lib_engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib_tile_level_loader.vcxproj">
+      <Project>{0FA39358-DE91-30BE-AF3C-549E8984485B}</Project>
+      <Name>lib_tile_level_loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{696D1F0E-BBE4-3034-A309-A8A7AAD00991}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{C77AC3A7-3DA6-37D8-A4C7-3D0CED0A58CF}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\System\sfml-system.vcxproj">
+      <Project>{B84B0A1F-39F9-33F7-A2C1-3C9727F1CFAB}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Maja\Documents\games\gameEngCoursework\out\build\lib\sfml\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{0D241BB4-9F6F-341C-9925-29AF16EF9350}</Project>
+      <Name>sfml-window</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

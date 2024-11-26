@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_actor_movement.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_bullet.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_ai.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_enemy_turret.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_hut_player.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_physics.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_player_physics.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_sprite.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\components\cmp_text.cpp">
+      <Filter>components</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\platformer_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_level3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Maja\Documents\games\code\lab_7_platformer\scenes\scene_menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Maja\Documents\games\code\lib_maths\maths.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Maja\Documents\games\code\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\Maja\Documents\games\code\res\fonts\RobotoMono-Regular.ttf">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_1.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_2.txt">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="C:\Users\Maja\Documents\games\code\res\level_3.txt">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{56549A9B-D531-373E-957E-3BF05A4D7F24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{B83DE70B-B03A-39D4-BEB1-F1C6B39B3E1B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="components">
+      <UniqueIdentifier>{7C9905FC-4C72-3400-9BF7-EA42AC185047}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{D3DFFCB3-98A3-361B-A485-9534A221D600}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

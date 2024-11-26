@@ -68,6 +68,7 @@ void Level1Scene::Load() {
         auto e = makeEntity();
         e->setPosition(pos);
         e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
+        }
     }
 
     // Add physics colliders to level tiles.

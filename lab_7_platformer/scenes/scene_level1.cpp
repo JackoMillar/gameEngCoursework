@@ -1,6 +1,7 @@
 #include "scene_level1.h"
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_sprite.h"
+#include "../components/cmp_health.h"
 #include "../game.h"
 #include <LevelSystem.h>
 #include <iostream>
@@ -33,6 +34,7 @@ void Level1Scene::Load() {
 
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
+        player->addComponent<HealthPointComponent>(50);
     }
     //creating enemies
     {
@@ -57,18 +59,6 @@ void Level1Scene::Load() {
       s->setShape<sf::RectangleShape>(Vector2f(30.f, 30.f));
       s->getShape().setFillColor(Color::Blue);
       s->getShape().setOrigin(Vector2(15.f, 15.f));
-    }
-
-  // Add physics colliders to level tiles.
-    {
-        auto walls = ls::findTiles(ls::WALL);
-        for (auto w : walls) {
-        auto pos = ls::getTilePosition(w);
-        pos += Vector2f(20.f, 20.f); //offset to center
-        auto e = makeEntity();
-        e->setPosition(pos);
-        e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
-        }
     }
 
     // Add physics colliders to level tiles.

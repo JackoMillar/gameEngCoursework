@@ -6,6 +6,7 @@
 
 
 class Scene;
+extern EntityManager entityManager;
 using namespace std;
 using namespace sf;
 
@@ -17,8 +18,6 @@ protected:
   bool _walled;
   bool _roofed;
   float _groundspeed;
-
- 
 
 public:
 
@@ -57,49 +56,56 @@ public:
 
 private:
     void executeAbility() {
+        printf("Test1\n");
         printf("Player touched the ground! Activating ability...\n");
-        auto compatibleComponents = _parent->GetCompatibleComponent<PlayerPhysicsComponent>();
+        auto compatibleComponents = _parent->get_components<PlayerPhysicsComponent>();
         if (!compatibleComponents.empty()) {
             
             // When the ball hits the ground, do AOE attack
-
+            printf("Test2\n");
             float aoe = 100.f;
             auto playerPosition = _parent->getPosition();
             //_parent->setForDelete();
 
             printf("AOE Attack triggered at position: (%.2f, %.2f)\n", playerPosition.x, playerPosition.y);
+            std::vector<std::shared_ptr<Entity>> allEntities = entityManager.list; // Replace with your actual logic
+            
+            float searchRadius = 100.0f;
 
-            auto nearbyEntities = findEntitiesInRange(playerPosition, aoe);
-            for (auto& entity : nearbyEntities) {
-                applyDamage(entity.get());  
+            auto nearbyEntities = findEntitiesInRange(playerPosition, searchRadius, allEntities);
+            printf("Test3\n");
+            for (const auto& entity : nearbyEntities) {
+                printf("Entity found within range at: (%.2f, %.2f)\n", entity->getPosition().x, entity->getPosition().y);
             }
         }
     }
 
 
-    std::vector<std::shared_ptr<Entity>> findEntitiesInRange(const sf::Vector2f& position, float radius) {
-        std::vector<std::shared_ptr<Entity>> result;
+    std::vector<std::shared_ptr<Entity>> findEntitiesInRange(
+        const sf::Vector2f& position,
+        float radius,
+        const std::vector<std::shared_ptr<Entity>>& entities) {
 
-        auto sceneParent = dynamic_cast<Scene*>(_parent);
-        if (sceneParent) {
-            for (auto& entity : sceneParent->getAllEntities()) {
-                // Skip if the entity is the player (we don't want to delete the player)
-                printf("test1\n");
-                if (entity.get() == _parent) {
-                    continue;
-                }
-                printf("test2\n");
-                const auto entityPos = entity->getPosition();
-                const float distance = std::hypot(entityPos.x - position.x, entityPos.y - position.y);  // Calculate the distance
-                if (distance <= radius) {
-                    result.push_back(entity);  // Add to result if it's within range and is not the player
-                }
-                printf("test3\n");
+        std::vector<std::shared_ptr<Entity>> result;
+        printf("Test4\n");
+        for (const auto& entity : entities) {
+            if (!entity) {
+                printf("Warning: Null entity encountered.\n");
+                continue;
             }
-        }
-        else {
-            // Handle the case where _parent is not a Scene or invalid
-            printf("Error: _parent is not a Scene or is invalid!\n");
+            printf("test6\n");
+            // Skip if the entity is the same as _parent/player
+            if (entity.get() == _parent) {
+                printf("this is the player\n");
+                continue;
+            }
+            printf("Test5\n");
+            const auto entityPos = entity->getPosition();
+            const float distance = std::hypot(entityPos.x - position.x, entityPos.y - position.y);  // Calculate the distance
+            if (distance <= radius) {
+                result.push_back(entity);  // Add to result if within range
+                printf("Entity at (%.2f, %.2f) added to result.\n", entityPos.x, entityPos.y);
+            }
         }
 
         return result;
@@ -110,15 +116,4 @@ private:
         entity->is_fordeletion(); 
     }
 
-    /*void createAOEVisualEffect(const sf::Vector2f& position, float radius) {
-        auto aoeEffect = makeEntity();
-        auto shape = aoeEffect->addComponent<ShapeComponent>();
-        shape->setShape<sf::CircleShape>(radius);
-        shape->getShape().setFillColor(sf::Color(255, 0, 0, 100)); // Semi-transparent red
-        shape->getShape().setPosition(position);
-        printf("AOE Visual Effect created at (%.2f, %.2f)\n", position.x, position.y);
-
-        // Destroy the effect after a short delay (pseudo-code)
-        aoeEffect->scheduleDestruction(1.0f); // Destroy in 1 second
-    }*/
 };

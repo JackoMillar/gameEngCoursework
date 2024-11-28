@@ -142,14 +142,14 @@ void PlayerPhysicsComponent::update(double dt) {
         if (_walled) {
             if (getVelocity().x < 0) {
                 setVelocity(Vector2f(getVelocity().x * 0.9f, getVelocity().y));
-                teleport(Vector2f(pos.x - 2.0f, pos.y));
+                teleport(Vector2f(pos.x - 10.0f, pos.y));
                 impulse(Vector2f(-3.f, 0));
                 printf("RIGHTWALL\n");
             }
             else
             {
                 setVelocity(Vector2f(getVelocity().x * 0.9f, getVelocity().y));
-                teleport(Vector2f(pos.x + 2.0f, pos.y));
+                teleport(Vector2f(pos.x + 10.0f, pos.y));
                 impulse(Vector2f(3.f, 0));
                 printf("LEFTWALL\n");
             }

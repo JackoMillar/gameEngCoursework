@@ -34,8 +34,8 @@ void Level1Scene::Load() {
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
-        entityManager.addEntity(player);
         player->addComponent<HealthPointComponent>(50);
+        entityManager.addEntity(player);
     }
 
     // Add physics colliders to level tiles.

@@ -44,10 +44,20 @@ void Level1Scene::Load() {
       auto TriEnemy = makeEntity();
       TriEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
       auto s = TriEnemy->addComponent<ShapeComponent>();
-      s->setShape<sf::CircleShape>(10.f, 3);
+      s->setShape<sf::CircleShape>(16.f, 3);
       s->getShape().setFillColor(Color::Yellow);
-      TriEnemy->addComponent<SteeringComponent>(player.get()); s->getShape().setFillColor(Color::Yellow);
+      TriEnemy->addComponent<SteeringComponent>(player.get());
   }
+  /*
+  for (size_t n = 0; n < 6; ++n) {
+      auto SqEnemy = makeEntity();
+      SqEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
+      auto s = SqEnemy->addComponent<ShapeComponent>();
+      s->setShape<sf::RectangleShape>(Vector2f(30.f, 30.f));
+      s->getShape().setFillColor(Color::Blue);
+      SqEnemy->addComponent<SteeringComponent>(player.get());
+  }
+  */
 
   // Add physics colliders to level tiles.
   {

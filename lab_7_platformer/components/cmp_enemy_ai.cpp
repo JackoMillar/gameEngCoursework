@@ -11,16 +11,16 @@ void SteeringComponent::update(double dt) {
         auto output = _seek.getSteering();
         move(output.direction * (float)dt);
     }
-    /*
+    
     // If target (player) is less than 50 pixels away then flee
     else if (length(_parent->getPosition() - _player->getPosition()) <
         50.0f) {
         auto output = _flee.getSteering();
         move(output.direction * (float)dt);
     }
-    */
+    
 }
-//Flee(p, player, 100.0f)),
+
 SteeringComponent::SteeringComponent(Entity* p, Entity* player)
     : _player(player), _seek(Seek(p, player, 100.0f)),
    _flee(Flee(p, player, 100.0f)),  Component(p) {}

@@ -1,6 +1,7 @@
 #include "scene_level1.h"
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_sprite.h"
+#include "../components/cmp_health.h"
 #include "../game.h"
 #include <LevelSystem.h>
 #include <iostream>
@@ -34,6 +35,7 @@ void Level1Scene::Load() {
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
         entityManager.addEntity(player);
+        player->addComponent<HealthPointComponent>(50);
     }
 
     // Add physics colliders to level tiles.

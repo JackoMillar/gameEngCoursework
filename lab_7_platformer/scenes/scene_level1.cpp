@@ -9,6 +9,7 @@
 using namespace std;
 using namespace sf;
 
+extern EntityManager entityManager;
 static shared_ptr<Entity> player;
 
 void Level1Scene::Load() {
@@ -30,9 +31,9 @@ void Level1Scene::Load() {
         s->setShape<sf::CircleShape>((20.f));
         s->getShape().setFillColor(Color::Red);
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
-
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
+        entityManager.addEntity(player);
     }
 
     // Add physics colliders to level tiles.

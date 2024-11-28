@@ -1,10 +1,12 @@
 #include "scene_level1.h"
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_sprite.h"
+#include "../components/cmp_enemy_ai.h"
 #include "../game.h"
 #include <LevelSystem.h>
 #include <iostream>
 #include <thread>
+#include <random>
 
 using namespace std;
 using namespace sf;
@@ -31,28 +33,20 @@ void Level1Scene::Load() {
   }
 
   //creating enemies
-  {
-      //creating a triangle enemy
-      auto triEnemy = makeEntity();
-      triEnemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY)[0]) +
-          Vector2f(24.f, 30.f));
-      auto s = triEnemy->addComponent<ShapeComponent>();
-      //setting the triangle enemy shape
-      s->setShape<sf::CircleShape>(18.f, 3);
-      s->getShape().setFillColor(Color::Yellow);
-      s->getShape().setOrigin(Vector2(18.f, 18.f));
-  }
+  //Setup C++ random number generation
+  random_device dev;
+  default_random_engine engine(dev());
 
-  {
-      //creating a square enemy
-      auto squareEnemy = makeEntity();
-      squareEnemy->setPosition(ls::getTilePosition(ls::findTiles(ls::ENEMY2)[0]) +
-          Vector2f(24.f, 24.f));
-      auto s = squareEnemy->addComponent<ShapeComponent>();
-      //setting the square enemy shape
-      s->setShape<sf::RectangleShape>(Vector2f(30.f, 30.f));
-      s->getShape().setFillColor(Color::Blue);
-      s->getShape().setOrigin(Vector2(15.f, 15.f));
+  uniform_real_distribution<float> x_dist(0.0f, Engine::GetWindow().getSize().x);
+  uniform_real_distribution<float> y_dist(0.0f, Engine::GetWindow().getSize().y);
+
+  for (size_t n = 0; n < 5; ++n) {
+      auto TriEnemy = makeEntity();
+      TriEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
+      auto s = TriEnemy->addComponent<ShapeComponent>();
+      s->setShape<sf::CircleShape>(10.f, 3);
+      s->getShape().setFillColor(Color::Yellow);
+      TriEnemy->addComponent<SteeringComponent>(player.get()); s->getShape().setFillColor(Color::Yellow);
   }
 
   // Add physics colliders to level tiles.
@@ -65,6 +59,7 @@ void Level1Scene::Load() {
       e->setPosition(pos);
       e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
     }
+    
   }
 
   //Simulate long loading times

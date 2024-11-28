@@ -85,3 +85,9 @@ set_target_properties(PRACTICAL_7_PLATFORMER
 )
 
 #@@@-
+### lab 7
+file(GLOB_RECURSE SOURCES lab_7_steering/*.cpp lab_7_steering/*.h)
+file(GLOB_RECURSE CMPNTS lab_7_steering/components/*.cpp lab_7_steering/components/*.h)
+add_executable(LAB_7_STEERING ${SOURCES} ${CMPNTS} ${RESOURCE_FILES})
+target_link_libraries(LAB_7_STEERING lib_engine)
+set(EXECUTABLES ${EXECUTABLES} LAB_7_STEERING)

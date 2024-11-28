@@ -2,6 +2,7 @@
 #include "cmp_bullet.h"
 #include "cmp_hurt_player.h"
 #include "engine.h"
+#include "cmp_health.cpp"
 #include <SFML/Graphics/CircleShape.hpp>
 using namespace std;
 using namespace sf;
@@ -22,8 +23,9 @@ void EnemyTurretComponent::update(double dt) {
 void EnemyTurretComponent::fire() const {
   auto bullet = _parent->scene->makeEntity();
   bullet->setPosition(_parent->getPosition());
-  bullet->addComponent<HurtComponent>();
+  bullet->addComponent<HurtComponent>(10);
   bullet->addComponent<BulletComponent>();
+  bullet->addComponent<HealthPointComponent>(1);
   auto s = bullet->addComponent<ShapeComponent>();
 
   s->setShape<sf::CircleShape>(8.f);

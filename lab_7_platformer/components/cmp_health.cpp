@@ -9,7 +9,7 @@ int hitPoints;
 void HealthPointComponent::hurt(int damage){
     hitPoints -= damage;
     if(hitPoints < 0){
-        //INSERT GAME OVER CODE HERE!!!
+        _parent->setForDelete();
     }
 }
 

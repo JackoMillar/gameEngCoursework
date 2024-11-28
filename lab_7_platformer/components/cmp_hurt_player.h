@@ -6,10 +6,11 @@ class HurtComponent : public Component {
 protected:
   void fire() const;
   std::weak_ptr<Entity> _player;
+  int damage;
 
 public:
   void update(double dt) override;
   void render() override {}
-  explicit HurtComponent(Entity* p);
+  explicit HurtComponent(Entity* p, int d);
   HurtComponent() = delete;
 };

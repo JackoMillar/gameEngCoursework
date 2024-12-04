@@ -1,7 +1,11 @@
 #include "scene_level3.h"
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_sprite.h"
+#include "../components/cmp_health.h"
+#include "../components/cmp_scoring.h"
+#include "../components/cmp_scoring_manager.h"
 #include "../game.h"
+#include "../components/cmp_text.h"
 #include <LevelSystem.h>
 #include <iostream>
 #include <thread>
@@ -30,8 +34,12 @@ void Level3Scene::Load() {
         s->setShape<sf::CircleShape>((20.f));
         s->getShape().setFillColor(Color::Red);
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
-
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
+        player->addComponent<OnGroundAbilityComponent>();
+        player->addComponent<HealthPointComponent>(50);
+        // Add ScoreComponent directly to the player
+        player->addComponent<ScoreComponent>();
+        entityManager.addEntity(player);
     }
 
     // Add physics colliders to level tiles.

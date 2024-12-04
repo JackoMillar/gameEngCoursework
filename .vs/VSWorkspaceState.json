@@ -6,8 +6,9 @@
     ]
   },
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lab_7_platformer",
+    "\\lab_7_platformer\\components"
   ],
-  "SelectedNode": "\\Games_Engineering.sln",
   "PreviewInSolutionExplorer": false
 }

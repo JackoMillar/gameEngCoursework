@@ -34,10 +34,6 @@ void Level1Scene::Load() {
     sf::View view(sf::FloatRect(0, 0, Engine::getWindowSize().x, Engine::getWindowSize().y));
     Engine::GetWindow().setView(view);
 
-    // Set the initial view
-    sf::View view(sf::FloatRect(0, 0, Engine::getWindowSize().x, Engine::getWindowSize().y));
-    Engine::GetWindow().setView(view);
-
     // Create player
     {
         player = makeEntity();

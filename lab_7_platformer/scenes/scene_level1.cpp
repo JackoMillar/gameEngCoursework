@@ -2,6 +2,8 @@
 #include "../components/cmp_player_physics.h"
 #include "../components/cmp_sprite.h"
 #include "../components/cmp_enemy_ai.h"
+#include "../components/cmp_state_machine.h"
+#include "../components/cmp_enemy_states.h"
 #include "../game.h"
 #include <LevelSystem.h>
 #include <iostream>
@@ -47,8 +49,16 @@ void Level1Scene::Load() {
       s->setShape<sf::CircleShape>(16.f, 3);
       s->getShape().setFillColor(Color::Yellow);
       TriEnemy->addComponent<SteeringComponent>(player.get());
+
+      //testing if states work
+      auto sm = TriEnemy->addComponent<StateMachineComponent>();
+      sm->addState("normal", make_shared<NormalState>(player));
+      sm->addState("near", make_shared<NearState>(player));
+      sm->changeState("normal");
   }
+
   /*
+  * //square enemies
   for (size_t n = 0; n < 6; ++n) {
       auto SqEnemy = makeEntity();
       SqEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));

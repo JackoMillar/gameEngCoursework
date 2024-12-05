@@ -6,7 +6,9 @@
 #include "../components/cmp_scoring_manager.h"
 #include "../components/cmp_enemy_ai.h"
 #include "../components/cmp_state_machine.h"
-#include "../components/cmp_enemy_states.h"
+//#include "../components/cmp_enemy_states.h"
+#include "../components/steering_decisions.h"
+#include "../components/steering_states.h"
 #include "../game.h"
 #include "../components/cmp_text.h"
 #include <LevelSystem.h>
@@ -48,6 +50,7 @@ void Level1Scene::Load() {
         // Add ScoreComponent directly to the player
         player->addComponent<ScoreComponent>();
         entityManager.addEntity(player);
+    }
 
   //creating enemies
   //Setup C++ random number generation
@@ -57,7 +60,8 @@ void Level1Scene::Load() {
   uniform_real_distribution<float> x_dist(0.0f, Engine::GetWindow().getSize().x);
   uniform_real_distribution<float> y_dist(0.0f, Engine::GetWindow().getSize().y);
 
-  for (size_t n = 0; n < 5; ++n) {
+  for (size_t n = 0; n < 5; ++n) 
+  {
       auto TriEnemy = makeEntity();
       TriEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
       auto s = TriEnemy->addComponent<ShapeComponent>();
@@ -65,11 +69,27 @@ void Level1Scene::Load() {
       s->getShape().setFillColor(Color::Yellow);
       TriEnemy->addComponent<SteeringComponent>(player.get());
 
-      //testing if states work
+      //the enemy states
       auto sm = TriEnemy->addComponent<StateMachineComponent>();
-      sm->addState("normal", make_shared<NormalState>(player));
-      sm->addState("near", make_shared<NearState>(player));
-      sm->changeState("normal");
+      sm->addState("stationary", make_shared<StationaryState>());
+      sm->addState("seek", make_shared<SeekState>(TriEnemy, player));
+      sm->addState("flee", make_shared<FleeState>(TriEnemy, player));
+
+      //decisions for enemy behavior
+      auto decision = make_shared<DistanceDecision>
+          (
+              player,
+              100.0f,
+              make_shared<FleeDecision>(),
+              make_shared<DistanceDecision>(
+                  player,
+                  50.0f,
+                  make_shared<RandomDecision>(
+                      make_shared<SeekDecision>(),
+                      make_shared<StationaryDecision>()),
+                  make_shared<SeekDecision>())
+          );
+      TriEnemy->addComponent<DecisionTreeComponent>(decision);
   }
 
   /*
@@ -113,7 +133,6 @@ void Level1Scene::Load() {
     cout << " Scene 1 Load Done" << endl;
 
     setLoaded(true);
-}
 }
 
 void Level1Scene::UnLoad() {

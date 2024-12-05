@@ -7,14 +7,14 @@ using namespace sf;
 //key beaviour is here in update
 void SteeringComponent::update(double dt) {
     // If target (player) is more than 100 pixels away then seek
-    if (length(_parent->getPosition() - _player->getPosition()) > 100.0f) {
+    if (length(_parent->getPosition() - _player->getPosition()) > 150.0f) {
         auto output = _seek.getSteering();
         move(output.direction * (float)dt);
     }
     
     // If target (player) is less than 50 pixels away then flee
     else if (length(_parent->getPosition() - _player->getPosition()) <
-        50.0f) {
+        80.0f) {
         auto output = _flee.getSteering();
         move(output.direction * (float)dt);
     }
@@ -41,23 +41,3 @@ void SteeringComponent::move(const sf::Vector2f& p) {
 }
 
 void SteeringComponent::move(float x, float y) { move(Vector2f(x, y)); }
-
-
-//probably not using but keeping for now
-/*
-void EnemyAIComponent::update(double dt) {
-  auto mov = _direction * (float)(dt * _speed);
-  mov.x += _direction.x * 16.f;
-  if (!validMove(_parent->getPosition() + mov)) {
-    _direction *= -1.f;
-  }
-
-  move(_direction * (float)(dt * _speed));
-  ActorMovementComponent::update(dt);
-}
-
-EnemyAIComponent::EnemyAIComponent(Entity* p) : ActorMovementComponent(p) {
-  _direction = Vector2f(1.0f, 0);
-  _speed = 100.0f;
-}
-*/

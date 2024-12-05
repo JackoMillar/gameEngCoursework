@@ -176,13 +176,13 @@ void PlayerPhysicsComponent::update(double dt) {
         Keyboard::isKeyPressed(Keyboard::Right))
         && _grounded || doubleJump) {
 
-        if (((Keyboard::isKeyPressed(Keyboard::Right) && _grounded) ||
+        if ((((Keyboard::isKeyPressed(Keyboard::Right) && _grounded) ||
             (Keyboard::isKeyPressed(Keyboard::Right) &&
              Keyboard::isKeyPressed(Keyboard::Space) &&
-             doubleJump == true))) {
+             doubleJump == true))) && !(Keyboard::isKeyPressed(Keyboard::Left))) {
             if (getVelocity().x < 0)
             {
-                setVelocity(Vector2f(0, 0));
+                setVelocity(Vector2f(0, getVelocity().y));
                 printf("DAMPRIGHT");
             }
                 
@@ -204,13 +204,13 @@ void PlayerPhysicsComponent::update(double dt) {
             }
             
         }
-        if (((Keyboard::isKeyPressed(Keyboard::Left) && _grounded) ||
+        if ((((Keyboard::isKeyPressed(Keyboard::Left) && _grounded) ||
             (Keyboard::isKeyPressed(Keyboard::Left) &&
             Keyboard::isKeyPressed(Keyboard::Space) &&
-            doubleJump == true))) {
+            doubleJump == true))) && !(Keyboard::isKeyPressed(Keyboard::Right))) {
             if (getVelocity().x > 0)
             {
-                setVelocity(Vector2f(0, 0));
+                setVelocity(Vector2f(0, getVelocity().y));
                 printf("DAMPLEFT");
             }
                

@@ -1,6 +1,14 @@
 #pragma once
 
 #include "cmp_physics.h"
+#include "maths.h"
+#include "engine.h"
+
+
+class Scene;
+extern EntityManager entityManager;
+using namespace std;
+using namespace sf;
 
 class PlayerPhysicsComponent : public PhysicsComponent {
 protected:
@@ -11,14 +19,101 @@ protected:
   bool _roofed;
   float _groundspeed;
 
+public:
+
   bool isGrounded() const;
   bool isWalled() const;
   bool isRoofed() const;
 
-public:
   void update(double dt) override;
 
   explicit PlayerPhysicsComponent(Entity* p, const sf::Vector2f& size);
 
   PlayerPhysicsComponent() = delete;
+};
+
+class OnGroundAbilityComponent : public Component {
+public:
+    OnGroundAbilityComponent(Entity* p) : Component(p) {}
+
+    void update(double dt) override {
+        
+        auto components = _parent->get_components<PlayerPhysicsComponent>();
+        if (!components.empty()) {
+            
+            auto playerPhysics = components[0];
+            
+            if (playerPhysics->isGrounded()) {
+                executeAbility();
+               
+            }
+        }
+    }
+
+    void render() override {
+        // No specific rendering needed for this component
+    }
+
+private:
+    void executeAbility() {
+        printf("Test1\n");
+        printf("Player touched the ground! Activating ability...\n");
+        auto compatibleComponents = _parent->get_components<PlayerPhysicsComponent>();
+        if (!compatibleComponents.empty()) {
+            
+            // When the ball hits the ground, do AOE attack
+            printf("Test2\n");
+            float aoe = 100.f;
+            auto playerPosition = _parent->getPosition();
+            //_parent->setForDelete();
+
+            printf("AOE Attack triggered at position: (%.2f, %.2f)\n", playerPosition.x, playerPosition.y);
+            std::vector<std::shared_ptr<Entity>> allEntities = entityManager.list; // Replace with your actual logic
+            
+            float searchRadius = 100.0f;
+
+            auto nearbyEntities = findEntitiesInRange(playerPosition, searchRadius, allEntities);
+            printf("Test3\n");
+            for (const auto& entity : nearbyEntities) {
+                printf("Entity found within range at: (%.2f, %.2f)\n", entity->getPosition().x, entity->getPosition().y);
+            }
+        }
+    }
+
+
+    std::vector<std::shared_ptr<Entity>> findEntitiesInRange(
+        const sf::Vector2f& position,
+        float radius,
+        const std::vector<std::shared_ptr<Entity>>& entities) {
+
+        std::vector<std::shared_ptr<Entity>> result;
+        printf("Test4\n");
+        for (const auto& entity : entities) {
+            if (!entity) {
+                printf("Warning: Null entity encountered.\n");
+                continue;
+            }
+            printf("test6\n");
+            // Skip if the entity is the same as _parent/player
+            if (entity.get() == _parent) {
+                printf("this is the player\n");
+                continue;
+            }
+            printf("Test5\n");
+            const auto entityPos = entity->getPosition();
+            const float distance = std::hypot(entityPos.x - position.x, entityPos.y - position.y);  // Calculate the distance
+            if (distance <= radius) {
+                result.push_back(entity);  // Add to result if within range
+                printf("Entity at (%.2f, %.2f) added to result.\n", entityPos.x, entityPos.y);
+            }
+        }
+
+        return result;
+    }
+
+    void applyDamage(Entity* entity) {
+        // Example: Assume entities have a health component
+        entity->is_fordeletion(); 
+    }
+
 };

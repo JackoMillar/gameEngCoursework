@@ -1,4 +1,4 @@
- # Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudio
+# Created by https://www.toptal.com/developers/gitignore/api/c++,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,visualstudio
 
 ### C++ ###
@@ -436,7 +436,7 @@ FodyWeavers.xsd
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,visualstudio
 
-/lib
 /out
+/lib
 /.vs
 /.vscode

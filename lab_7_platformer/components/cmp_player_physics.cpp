@@ -1,5 +1,7 @@
 #include "cmp_player_physics.h"
 #include "system_physics.h"
+#include "cmp_player_abilities.h"
+#include "../components/cmp_scoring.h"
 #include <LevelSystem.h>
 #include <SFML/Window/Keyboard.hpp>
 
@@ -8,6 +10,8 @@ using namespace sf;
 using namespace Physics;
 
 bool doubleJump = false;
+
+
 
 bool PlayerPhysicsComponent::isGrounded() const {
     auto touch = getTouching();
@@ -85,24 +89,32 @@ void PlayerPhysicsComponent::update(double dt) {
 
     const auto pos = _parent->getPosition();
 
+    //checks to see where the player is at
     _grounded = isGrounded();
     _walled = isWalled();
     _roofed = isRoofed();
 
-    //Teleport to start if we fall off map.
+    //Teleport to start incase we fall off map.
     if (pos.y > ls::getHeight() * ls::getTileSize()) {
         teleport(ls::getTilePosition(ls::findTiles(ls::START)[0]));
     }
 
+    // Collision with roof/wall/ground
     if (_grounded || _walled || _roofed || doubleJump) {
         if (_grounded || doubleJump) {
             if (_grounded)
             {
-            doubleJump = true;
-            setVelocity(Vector2f(getVelocity().x, 0.f));
-            teleport(Vector2f(pos.x, pos.y - 2.0f));
-            impulse(Vector2f(0, -10.f));
-            printf("GROUND\n");
+                doubleJump = true;
+                setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+                teleport(Vector2f(pos.x, pos.y - 5.0f));
+                impulse(Vector2f(0, -10.f));
+                printf("GROUND\n");
+
+                auto scoreComponent = _parent->GetCompatibleComponent<ScoreComponent>();
+                if (!scoreComponent.empty()) {
+                    scoreComponent[0]->addScore(10); // Add 10 to the score when the player hits the ground
+                    printf("SCORE ADDED");
+                }
             }
             if ((Keyboard::isKeyPressed(Keyboard::Up) && _grounded) ||
                 (Keyboard::isKeyPressed(Keyboard::Up) &&
@@ -114,7 +126,12 @@ void PlayerPhysicsComponent::update(double dt) {
                 if (Keyboard::isKeyPressed(Keyboard::Space) && doubleJump)
                 {
                     doubleJump = false;
+                    impulse(Vector2f(0, -4.f));
                     printf("DOUBLE-JUMP\n");
+                    if (getVelocity().y <= 0) {
+                        setVelocity(Vector2f(getVelocity().x, 0.f));
+                        impulse(Vector2f(0, -2.f));
+                    }
                 }
             }
             if ((Keyboard::isKeyPressed(Keyboard::Down) && _grounded) ||
@@ -133,27 +150,28 @@ void PlayerPhysicsComponent::update(double dt) {
         }
         if (_walled) {
             if (getVelocity().x < 0) {
-                setVelocity(Vector2f(getVelocity().x, getVelocity().y));
-                teleport(Vector2f(pos.x - 2.0f, pos.y));
-                impulse(Vector2f(-2.f, 0));
-                printf("LEFTWALL\n");
+                setVelocity(Vector2f(getVelocity().x * 0.9f, getVelocity().y));
+                teleport(Vector2f(pos.x - 10.0f, pos.y));
+                impulse(Vector2f(-3.f, 0));
+                printf("RIGHTWALL\n");
             }
             else
             {
-                setVelocity(Vector2f(getVelocity().x, getVelocity().y));
-                teleport(Vector2f(pos.x + 2.0f, pos.y));
-                impulse(Vector2f(2.f, 0));
-                printf("RIGHTWALL\n");
+                setVelocity(Vector2f(getVelocity().x * 0.9f, getVelocity().y));
+                teleport(Vector2f(pos.x + 10.0f, pos.y));
+                impulse(Vector2f(3.f, 0));
+                printf("LEFTWALL\n");
             }
            
         }
         if (_roofed) {
-            setVelocity(Vector2f(getVelocity().x, 0));
+            setVelocity(Vector2f(getVelocity().x, getVelocity().y));
             teleport(Vector2f(pos.x, pos.y + 10.0f));
             printf("ROOF\n");
         }
     }
 
+    // Left/Right Jumps
     if ((Keyboard::isKeyPressed(Keyboard::Left) ||
         Keyboard::isKeyPressed(Keyboard::Right))
         && _grounded || doubleJump) {
@@ -168,7 +186,9 @@ void PlayerPhysicsComponent::update(double dt) {
                 printf("DAMPRIGHT");
             }
                 
-            impulse({ static_cast<float>(dt * _groundspeed * 50), 0 });
+            setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+            teleport(Vector2f(pos.x, pos.y - 5.0f));
+            impulse(Vector2f(10.f, 0));  // Positive X impulse for moving right
             printf("RIGHT\n");
 
             if (Keyboard::isKeyPressed(Keyboard::Up)) {
@@ -194,7 +214,10 @@ void PlayerPhysicsComponent::update(double dt) {
                 printf("DAMPLEFT");
             }
                
-                impulse({ -static_cast<float>(dt * _groundspeed * 50), 0 });
+                // Apply horizontal impulse to the left direction
+                setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+                teleport(Vector2f(pos.x, pos.y - 5.0f));
+                impulse(Vector2f(-10.f, 0));  // Negative X impulse for moving left
                 printf("LEFT\n");
 
                 if (Keyboard::isKeyPressed(Keyboard::Up)) {
@@ -212,10 +235,6 @@ void PlayerPhysicsComponent::update(double dt) {
             
         }
 
-    }
-    else {
-        // Dampen X axis movement
-       // dampen({ 0.9f, 1.0f });
     }    
 
     //Are we in air?

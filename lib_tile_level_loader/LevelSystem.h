@@ -7,6 +7,8 @@
 #include <vector>
 #include <map>
 
+extern int exitcd;
+
 #define ls LevelSystem
 
 class LevelSystem {
@@ -16,6 +18,7 @@ public:
   static void render(sf::RenderWindow& window);
 
   typedef unsigned char Tile;
+
 
   enum TILES {
     EMPTY = ' ',

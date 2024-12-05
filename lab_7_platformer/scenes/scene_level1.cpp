@@ -39,7 +39,7 @@ void Level1Scene::Load() {
     Engine::GetWindow().setView(view);
 
     // Create player
-    {
+    
         player = makeEntity();
         player->setPosition(ls::getTilePosition(ls::findTiles(ls::START)[0]));
         auto s = player->addComponent<ShapeComponent>();
@@ -52,7 +52,7 @@ void Level1Scene::Load() {
         // Add ScoreComponent directly to the player
         player->addComponent<ScoreComponent>();
         entityManager.addEntity(player);
-    }
+    
 
   //creating enemies
   //Setup C++ random number generation
@@ -64,8 +64,12 @@ void Level1Scene::Load() {
   vector<float> x;
   vector<float> y;
 
+<<<<<<< Updated upstream
   
   for (size_t n = 0; n < 5; ++n) 
+=======
+  for (size_t n = 0; n < 50; ++n) 
+>>>>>>> Stashed changes
   {
     auto TriEnemy = makeEntity();
     x.push_back(x_dist(engine));
@@ -100,7 +104,8 @@ void Level1Scene::Load() {
       auto p = TriEnemy->addComponent<PhysicsComponent>(true, Vector2f(15.f, 15.f));
       p->setWeightless();
       TriEnemy->addComponent<HealthPointComponent>(5);
-      TriEnemy->addComponent<HurtComponent>(10);
+      auto hurt = TriEnemy->addComponent<HurtComponent>(10);
+     // hurt->setPlayer(player);
 
 
       //the enemy states
@@ -124,6 +129,7 @@ void Level1Scene::Load() {
                   make_shared<SeekDecision>())
           );
       TriEnemy->addComponent<DecisionTreeComponent>(decision);
+      entityManager.addEntity(TriEnemy);
   }
 
   /*
@@ -205,6 +211,8 @@ void Level1Scene::Update(const double& dt) {
     // Get half the window size
     sf::Vector2f halfWindowSize(Engine::getWindowSize().x / 2.f, Engine::getWindowSize().y / 2.f);
 
+    entityManager.removeMarkedEntities();
+
     // Clamp the view's center to the level bounds
     float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
     float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
@@ -224,6 +232,7 @@ void Level1Scene::Update(const double& dt) {
         }
 
     // Call the base update
+    
     Scene::Update(dt);
 }
 

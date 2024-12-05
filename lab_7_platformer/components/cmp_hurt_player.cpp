@@ -9,7 +9,9 @@ int damage;
 int const pldamage=5; //set damage dealt by player collision to 5, change here if needed
 
 void HurtComponent::update(double dt) {
+    
   if (auto pl = _player.lock()) {
+      printf("Teest");
     auto p = _parent->GetCompatibleComponent<PhysicsComponent>();
     auto plp = pl->GetCompatibleComponent<PhysicsComponent>();
     if(p[0]->isTouching(*plp[0])) {
@@ -20,6 +22,7 @@ void HurtComponent::update(double dt) {
       cout << "ow\n";
     }
   }
+
 }
 
 HurtComponent::HurtComponent(Entity* p, int d)

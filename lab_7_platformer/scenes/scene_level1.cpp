@@ -19,7 +19,7 @@ using namespace sf;
 
 extern EntityManager entityManager;
 static shared_ptr<Entity> player;
-int exitcd = 120;
+double exitcd = 2;
 static shared_ptr<Entity> score;
 
 void Level1Scene::Load() {
@@ -125,10 +125,12 @@ void Level1Scene::UnLoad() {
 
 void Level1Scene::Update(const double& dt) {
     if(true /*ENEMY DEATH CHECK HERE*/){
-
         // Count down 2 seconds
         if(exitcd!=0){
-            exitcd--;
+            exitcd-=dt;
+            if(exitcd < 0){
+                exitcd = 0;
+            }
         }
         else{
             // Check if the player has reached the end tile

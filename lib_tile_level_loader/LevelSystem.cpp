@@ -172,7 +172,7 @@ void LevelSystem::buildSprites(bool optimise) {
 }
 
 void LevelSystem::render(RenderWindow& window) {
-  if (exitcd == 1)
+  if (exitcd < 0.4 && exitcd > 0)
   {
     ls::setColor(ls::END, Color::Green);
     buildSprites();

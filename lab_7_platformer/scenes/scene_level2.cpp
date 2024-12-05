@@ -16,14 +16,16 @@ using namespace sf;
 static shared_ptr<Entity> player;
 
 void Level2Scene::Load() {
+    // Load Scene
     cout << " Scene 2 Load" << endl;
     ls::loadLevelFile("res/level_2.txt", 40.0f);
 
+    // Load Game Window
     auto ho = Engine::getWindowSize().y - (ls::getHeight() * 40.f);
     ls::setOffset(Vector2f(0, ho));
 
     // Set the initial view
-    sf::View view(sf::FloatRect(0, 0, Engine::getWindowSize().x, Engine::getWindowSize().y));
+    View view(sf::FloatRect(0, 0, Engine::getWindowSize().x, Engine::getWindowSize().y));
     Engine::GetWindow().setView(view);
 
     // Create player
@@ -55,7 +57,7 @@ void Level2Scene::Load() {
     }
 
     //Simulate long loading times
-    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+    this_thread::sleep_for(std::chrono::milliseconds(1500));
     cout << " Scene 2 Load Done" << endl;
 
     setLoaded(true);
@@ -87,21 +89,21 @@ void Level2Scene::Update(const double& dt) {
         }
     }
     // Get current view and player position
-    sf::View view = Engine::GetWindow().getView();
-    sf::Vector2f playerPos = player->getPosition();
+    View view = Engine::GetWindow().getView();
+    Vector2f playerPos = player->getPosition();
 
     // Calculate the bounds of the level in pixels
-    sf::Vector2f levelSize(ls::getWidth() * 40.f, ls::getHeight() * 40.f);
+    Vector2f levelSize(ls::getWidth() * 40.f, ls::getHeight() * 40.f);
 
     // Get the vertical offset set in the level system
-    sf::Vector2f levelOffset = ls::getOffset();
+    Vector2f levelOffset = ls::getOffset();
 
     // Get half the window size
-    sf::Vector2f halfWindowSize(Engine::getWindowSize().x / 2.f, Engine::getWindowSize().y / 2.f);
+    Vector2f halfWindowSize(Engine::getWindowSize().x / 2.f, Engine::getWindowSize().y / 2.f);
 
     // Clamp the view's center to the level bounds
-    float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
-    float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
+    float clampedX = clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
+    float clampedY = clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
 
     // Update the view center
     view.setCenter(clampedX, clampedY);
@@ -109,7 +111,6 @@ void Level2Scene::Update(const double& dt) {
 
     // Call the base update
     Scene::Update(dt);
-    
 }
 
 

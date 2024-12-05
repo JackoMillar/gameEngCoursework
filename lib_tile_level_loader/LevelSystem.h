@@ -27,7 +27,6 @@ public:
     WALL = 'w',
     ENEMY = 'n',
     ENEMY2 = 'm',
-    WAYPOINT = '+'
   };
 
   static Tile getTile(sf::Vector2ul);

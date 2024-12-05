@@ -11,8 +11,9 @@ using namespace Physics;
 
 bool doubleJump = false;
 
-
-
+/*
+    Check if Player is touching the ground.    
+*/
 bool PlayerPhysicsComponent::isGrounded() const {
     auto touch = getTouching();
     const auto& pos = _body->GetPosition();
@@ -31,10 +32,12 @@ bool PlayerPhysicsComponent::isGrounded() const {
             return true;
         }
     }
-
     return false;
 }
 
+/*
+    Check if the player is touching a roof
+*/
 bool PlayerPhysicsComponent::isRoofed() const {
     auto touch = getTouching();
     const auto& pos = _body->GetPosition();
@@ -59,11 +62,14 @@ bool PlayerPhysicsComponent::isRoofed() const {
     return false;
 }
 
+/*
+    Check if the player is touching the wall
+*/
 bool PlayerPhysicsComponent::isWalled() const {
     auto touch = getTouching();
     const auto& pos = _body->GetPosition();
     const float halfPlrHeight = _size.y * 0.5f;
-    const float halfPlrWidth = _size.x * 0.52f;  // Use this to define a small boundary on each side of the player.
+    const float halfPlrWidth = _size.x * 0.52f; 
     b2WorldManifold manifold;
 
     for (const auto& contact : touch) {
@@ -94,35 +100,41 @@ void PlayerPhysicsComponent::update(double dt) {
     _walled = isWalled();
     _roofed = isRoofed();
 
-    //Teleport to start incase we fall off map.
-    if (pos.y > ls::getHeight() * ls::getTileSize()) {
-        teleport(ls::getTilePosition(ls::findTiles(ls::START)[0]));
-    }
-
     // Collision with roof/wall/ground
     if (_grounded || _walled || _roofed || doubleJump) {
+
+        // Ground Jump
         if (_grounded || doubleJump) {
+
+            // When the ball hits the ground
             if (_grounded)
             {
                 doubleJump = true;
                 setVelocity(Vector2f(getVelocity().x, getVelocity().y));
+
+                // teleport ball away from the ground and impulse it upwards
                 teleport(Vector2f(pos.x, pos.y - 5.0f));
                 impulse(Vector2f(0, -10.f));
                 printf("GROUND\n");
 
+                // Add score when the player hits the ground
                 auto scoreComponent = _parent->GetCompatibleComponent<ScoreComponent>();
                 if (!scoreComponent.empty()) {
-                    scoreComponent[0]->addScore(10); // Add 10 to the score when the player hits the ground
-                    printf("SCORE ADDED");
+                    scoreComponent[0]->addScore(10);
                 }
             }
+
+            // if player wants to jump upwards from ground or double jump upwards
             if ((Keyboard::isKeyPressed(Keyboard::Up) && _grounded) ||
                 (Keyboard::isKeyPressed(Keyboard::Up) &&
                 Keyboard::isKeyPressed(Keyboard::Space) &&
                 doubleJump == true)) {
+
                 teleport(Vector2f(pos.x, pos.y - 2.0f));
                 impulse(Vector2f(0, -4.f));
                 printf("UP\n");
+
+                // deactivate double jump
                 if (Keyboard::isKeyPressed(Keyboard::Space) && doubleJump)
                 {
                     doubleJump = false;
@@ -134,6 +146,7 @@ void PlayerPhysicsComponent::update(double dt) {
                     }
                 }
             }
+            // if player wants to jump lower or double jump downwards
             if ((Keyboard::isKeyPressed(Keyboard::Down) && _grounded) ||
                 (Keyboard::isKeyPressed(Keyboard::Down) &&
                 Keyboard::isKeyPressed(Keyboard::Space) &&
@@ -141,6 +154,8 @@ void PlayerPhysicsComponent::update(double dt) {
                 teleport(Vector2f(pos.x, pos.y - 2.0f));
                 impulse(Vector2f(0, 4.f));
                 printf("DOWN\n");
+
+                // deactivate double jump
                 if (Keyboard::isKeyPressed(Keyboard::Space) && doubleJump)
                 {
                     doubleJump = false;

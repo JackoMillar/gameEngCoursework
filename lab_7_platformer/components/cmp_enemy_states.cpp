@@ -1,5 +1,6 @@
 #include "cmp_enemy_states.h"
 #include "cmp_sprite.h"
+//probably dont need because have state machine and decision making
 
 using namespace sf;
 

@@ -1,4 +1,5 @@
 #include "cmp_state_machine.h"
+#include "steering_decisions.h"
 
 using namespace std;
 

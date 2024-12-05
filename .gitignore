@@ -438,3 +438,5 @@ FodyWeavers.xsd
 
 /lib
 /out
+/.vs
+/.vscode

@@ -31,7 +31,6 @@ bool PlayerPhysicsComponent::isGrounded() const {
             return true;
         }
     }
-
     return false;
 }
 

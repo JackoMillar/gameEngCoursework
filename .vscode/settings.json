@@ -2,6 +2,7 @@
     "files.associations": {
         "set": "cpp",
         "xstring": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "memory": "cpp"
     }
 }

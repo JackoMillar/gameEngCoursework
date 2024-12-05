@@ -118,6 +118,7 @@ void Level1Scene::Load() {
 
     setLoaded(true);
 }
+}
 
 void Level1Scene::UnLoad() {
     cout << "Scene 1 Unload" << endl;

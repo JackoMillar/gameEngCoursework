@@ -11,6 +11,7 @@
 #include "../components/steering_states.h"
 #include "../game.h"
 #include "../components/cmp_text.h"
+#include "../components/cmp_hurt_player.h"
 #include <LevelSystem.h>
 #include <iostream>
 #include <thread>
@@ -69,8 +70,11 @@ void Level1Scene::Load() {
       s->setShape<sf::CircleShape>(16.f, 3);
       s->getShape().setFillColor(Color::Yellow);
       TriEnemy->addComponent<SteeringComponent>(player.get());
-      auto p = TriEnemy->addComponent<PhysicsComponent>(true, Vector2f(27.f, 27.f));
+      auto p = TriEnemy->addComponent<PhysicsComponent>(true, Vector2f(15.f, 15.f));
       p->setWeightless();
+      TriEnemy->addComponent<HealthPointComponent>(5);
+      TriEnemy->addComponent<HurtComponent>(10);
+
 
       //the enemy states
       auto sm = TriEnemy->addComponent<StateMachineComponent>();

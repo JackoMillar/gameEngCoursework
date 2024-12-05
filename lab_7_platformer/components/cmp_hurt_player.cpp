@@ -10,14 +10,17 @@ int const pldamage=5; //set damage dealt by player collision to 5, change here i
 
 void HurtComponent::update(double dt) {
   if (auto pl = _player.lock()) {
-    if (length(pl->getPosition() - _parent->getPosition()) < 25.0) {
+    auto p = _parent->GetCompatibleComponent<PhysicsComponent>();
+    auto plp = pl->GetCompatibleComponent<PhysicsComponent>();
+    if(p[0]->isTouching(*plp[0])) {
       auto plhealth = pl->GetCompatibleComponent<HealthPointComponent>();
       plhealth[0]->hurt(damage);
-      auto health = _parent->GetCompatibleComponent<HealthPointComponent>();
+      auto health = _parent->GetCompatibleComponent<HealthPointComponent>(); //NOT WORKING
       health[0]->hurt(pldamage);
+      cout << "ow\n";
     }
   }
 }
 
 HurtComponent::HurtComponent(Entity* p, int d)
-    : Component(p), _player(_parent->scene->ents.find("player")[0]) {damage = d;}
+    : Component(p){damage = d;}

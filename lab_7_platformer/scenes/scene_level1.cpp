@@ -59,13 +59,40 @@ void Level1Scene::Load() {
   random_device dev;
   default_random_engine engine(dev());
 
-  uniform_real_distribution<float> x_dist(0.0f, Engine::GetWindow().getSize().x);
-  uniform_real_distribution<float> y_dist(0.0f, Engine::GetWindow().getSize().y);
+  uniform_real_distribution<float> x_dist(45.f, ls::getWidth() * 40.f - 45.f);
+  uniform_real_distribution<float> y_dist(45.f, ls::getHeight() * 40.f - 45.f);
+  vector<float> x;
+  vector<float> y;
 
+  
   for (size_t n = 0; n < 5; ++n) 
   {
-      auto TriEnemy = makeEntity();
-      TriEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
+    auto TriEnemy = makeEntity();
+    x.push_back(x_dist(engine));
+    y.push_back(y_dist(engine));
+    bool repeat = false;
+    while (true)
+    {
+        for(int ix = 0; ix < x.size()-1; ix++){
+            for(int iy = 0; iy < y.size()-1; iy++){
+                if(x[n] == x[ix] && y[n] == y[iy]){
+                    repeat = true;
+                }
+            }
+        }
+        if(repeat == false){
+            TriEnemy->setPosition(Vector2f(x[n], y[n]));
+            break;
+        }
+        else{
+            x[n] = x_dist(engine);
+            y[n] = y_dist(engine);
+            repeat = false;
+        }
+    }
+
+
+      //TriEnemy->setPosition(Vector2f(x_dist(engine), y_dist(engine)));
       auto s = TriEnemy->addComponent<ShapeComponent>();
       s->setShape<sf::CircleShape>(16.f, 3);
       s->getShape().setFillColor(Color::Yellow);
@@ -132,13 +159,9 @@ void Level1Scene::Load() {
       e->setPosition(pos);
       e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
     }
-    
   }
-
     //Simulate long loading times
-    std::this_thread::sleep_for(std::chrono::milliseconds(3000));
     cout << " Scene 1 Load Done" << endl;
-
     setLoaded(true);
 }
 

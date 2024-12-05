@@ -13,6 +13,7 @@
 #include <iostream>
 #include <thread>
 #include <random>
+#include <Box2D/Dynamics/b2Body.h>
 
 using namespace std;
 using namespace sf;
@@ -64,6 +65,8 @@ void Level1Scene::Load() {
       s->setShape<sf::CircleShape>(16.f, 3);
       s->getShape().setFillColor(Color::Yellow);
       TriEnemy->addComponent<SteeringComponent>(player.get());
+      auto p = TriEnemy->addComponent<PhysicsComponent>(true, Vector2f(27.f, 27.f));
+      p->setWeightless();
 
       //testing if states work
       auto sm = TriEnemy->addComponent<StateMachineComponent>();

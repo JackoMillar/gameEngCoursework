@@ -28,4 +28,5 @@ public:
   void setVelocity(const sf::Vector2f& v);
   void teleport(const sf::Vector2f& v);
   ~PhysicsComponent() override;
+  void setWeightless();
 };

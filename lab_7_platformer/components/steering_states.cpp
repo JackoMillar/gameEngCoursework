@@ -14,7 +14,8 @@ void SeekState::execute(Entity* owner, double dt) noexcept {
     auto s = owner->get_components<ShapeComponent>();
     s[0]->getShape().setFillColor(Color::Green);
     auto output = _steering.getSteering();
-    owner->setPosition(owner->getPosition() + (output.direction * (float)dt));
+    auto p = owner->GetCompatibleComponent<PhysicsComponent>();
+    p[0]->setVelocity(Vector2f(output.direction.x,-output.direction.y));
 }
 
 //TEST - if in flee state then colour red
@@ -22,5 +23,6 @@ void FleeState::execute(Entity* owner, double dt) noexcept {
     auto s = owner->get_components<ShapeComponent>();
     s[0]->getShape().setFillColor(Color::Red);
     auto output = _steering.getSteering();
-    owner->setPosition(owner->getPosition() + (output.direction * (float)dt));
+    auto p = owner->GetCompatibleComponent<PhysicsComponent>();
+    p[0]->setVelocity(Vector2f(output.direction.x,-output.direction.y));
 }

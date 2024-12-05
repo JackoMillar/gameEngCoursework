@@ -3,6 +3,7 @@
 
 #include "cmp_steering.h"
 #include "cmp_state_machine.h"
+#include "cmp_physics.h"
 
 class StationaryState : public State
 {

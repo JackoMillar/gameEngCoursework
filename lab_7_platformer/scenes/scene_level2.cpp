@@ -69,11 +69,23 @@ void Level2Scene::UnLoad() {
 }
 
 void Level2Scene::Update(const double& dt) {
-    // Check if the player has reached the end tile
-    if (ls::getTileAt(player->getPosition()) == ls::END) {
-        Engine::ChangeScene((Scene*)&level3);
+    if(true /*ENEMY DEATH CHECK HERE*/){
+
+        // Count down 2 seconds
+        if(exitcd!=0){
+            exitcd--;
+        }
+        else{
+            // Check if the player has reached the end tile
+            if (ls::getTileAt(player->getPosition()) == ls::END) {
+                exitcd = 120;
+                ls::setColor(ls::END, Color::Red);
+                Engine::ChangeScene((Scene*)&level3);
+                return;
+            }
+
+        }
     }
-    else{
     // Get current view and player position
     sf::View view = Engine::GetWindow().getView();
     sf::Vector2f playerPos = player->getPosition();
@@ -97,7 +109,7 @@ void Level2Scene::Update(const double& dt) {
 
     // Call the base update
     Scene::Update(dt);
-    }
+    
 }
 
 

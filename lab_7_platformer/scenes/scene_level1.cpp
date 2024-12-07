@@ -63,8 +63,6 @@ void Level1Scene::Load() {
   uniform_real_distribution<float> y_dist(45.f, ls::getHeight() * 40.f - 45.f);
   vector<float> x;
   vector<float> y;
-
-
   
   for (size_t n = 0; n < 50; ++n) 
   {
@@ -102,8 +100,7 @@ void Level1Scene::Load() {
       p->setWeightless();
       TriEnemy->addComponent<HealthPointComponent>(5);
       auto hurt = TriEnemy->addComponent<HurtComponent>(10);
-     // hurt->setPlayer(player);
-
+      hurt->setPlayer(player);
 
       //the enemy states
       auto sm = TriEnemy->addComponent<StateMachineComponent>();
@@ -166,6 +163,7 @@ void Level1Scene::Load() {
     //Simulate long loading times
     cout << " Scene 1 Load Done" << endl;
     setLoaded(true);
+
 }
 
 void Level1Scene::UnLoad() {
@@ -228,8 +226,20 @@ void Level1Scene::Update(const double& dt) {
             
         }
 
-    // Call the base update
+        auto healthComp = player->GetCompatibleComponent<HealthPointComponent>();
+
+
+        auto healthComponents = player->GetCompatibleComponent<HealthPointComponent>();
+        if (!healthComponents.empty()) {
+            auto healthComp = healthComponents[0];
+            if (healthComp && healthComp->getHealth() <= 0) {
+                cout << "Player health is 0 or below. Game over or take necessary action!" << endl;
+                Engine::ChangeScene((Scene*)&menu2);
+                return;
+            }
+        }
     
+        // Call the base update
     Scene::Update(dt);
 }
 

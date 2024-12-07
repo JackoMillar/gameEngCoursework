@@ -75,7 +75,6 @@ private:
             for (const auto& entity : nearbyEntities) {
                 printf("Entity found within range at: (%.2f, %.2f)\n", entity->getPosition().x, entity->getPosition().y);
                 entity->markForDeletion();
-              
             }
         }
     }
@@ -93,7 +92,7 @@ private:
                 printf("Warning: Null entity encountered.\n");
                 continue;
             }
-            printf("test6\n");
+          
             // Skip if the entity is the same as _parent/player
             if (entity.get() == _parent) {
                 printf("this is the player\n");
@@ -109,10 +108,4 @@ private:
 
         return result;
     }
-
-    void applyDamage(Entity* entity) {
-        // Example: Assume entities have a health component
-        entity->is_fordeletion(); 
-    }
-
 };

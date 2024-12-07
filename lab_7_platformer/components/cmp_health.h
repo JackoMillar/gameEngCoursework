@@ -9,6 +9,7 @@ protected:
 public:
     void hurt(int damage);
     void heal(int healing);
+    int getHealth();
     void update(double dt) override;
     void render() override;
     explicit HealthPointComponent(Entity* p, int maxHp);

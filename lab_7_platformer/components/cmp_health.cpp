@@ -9,7 +9,7 @@ int hitPoints;
 void HealthPointComponent::hurt(int damage){
     hitPoints -= damage;
     if(hitPoints < 0){
-        _parent->setForDelete();
+        _parent->markForDeletion();
     }
 }
 
@@ -18,6 +18,10 @@ void HealthPointComponent::heal(int healing){
     if(hitPoints > maxHP){
         hitPoints = maxHP;
     }
+}
+
+int HealthPointComponent::getHealth() {
+    return hitPoints;
 }
 
 void HealthPointComponent::update(double dt){}

@@ -1,18 +1,30 @@
 #pragma once
+#include <ecm.h>
+#include "cmp_steering.h"
+//#include "cmp_actor_movement.h"
 
-#include "cmp_actor_movement.h"
-//using this as the StateMachineComponent - if using states
 
+//steeringComponent will control the AI movement
+class SteeringComponent : public Component {
+protected:
+    Seek _seek;
+    Flee _flee;
+    Entity* _player;
+    bool validMove(const sf::Vector2f&) const;
+public:
+    void update(double) override;
+    void move(const sf::Vector2f&);
+    void move(float x, float y);
+    void render() override { }
+    explicit SteeringComponent(Entity* p, Entity* player);
+    SteeringComponent() = delete;
+};
+
+
+/*
 class EnemyAIComponent : public ActorMovementComponent {
 protected:
   sf::Vector2f _direction;
- //enum state {ROAMING, ROTATING, ROTATED};
-//state _state;
-/*
-//SEEK, ARRIVE, FACE,
-ARRIVE - Move towards target and stop when within a given distance
-So ARRIVE for triangle, SEEK and maybe FACE for square
-*/
 
 public:
   void update(double dt) override;
@@ -21,3 +33,4 @@ public:
 
   EnemyAIComponent() = delete;
 };
+*/

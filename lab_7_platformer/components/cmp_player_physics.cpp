@@ -31,7 +31,6 @@ bool PlayerPhysicsComponent::isGrounded() const {
             return true;
         }
     }
-
     return false;
 }
 
@@ -109,12 +108,6 @@ void PlayerPhysicsComponent::update(double dt) {
                 teleport(Vector2f(pos.x, pos.y - 5.0f));
                 impulse(Vector2f(0, -10.f));
                 printf("GROUND\n");
-
-                auto scoreComponent = _parent->GetCompatibleComponent<ScoreComponent>();
-                if (!scoreComponent.empty()) {
-                    scoreComponent[0]->addScore(10); // Add 10 to the score when the player hits the ground
-                    printf("SCORE ADDED");
-                }
             }
             if ((Keyboard::isKeyPressed(Keyboard::Up) && _grounded) ||
                 (Keyboard::isKeyPressed(Keyboard::Up) &&
@@ -176,13 +169,13 @@ void PlayerPhysicsComponent::update(double dt) {
         Keyboard::isKeyPressed(Keyboard::Right))
         && _grounded || doubleJump) {
 
-        if (((Keyboard::isKeyPressed(Keyboard::Right) && _grounded) ||
+        if ((((Keyboard::isKeyPressed(Keyboard::Right) && _grounded) ||
             (Keyboard::isKeyPressed(Keyboard::Right) &&
              Keyboard::isKeyPressed(Keyboard::Space) &&
-             doubleJump == true))) {
+             doubleJump == true))) && !(Keyboard::isKeyPressed(Keyboard::Left))) {
             if (getVelocity().x < 0)
             {
-                setVelocity(Vector2f(0, 0));
+                setVelocity(Vector2f(0, getVelocity().y));
                 printf("DAMPRIGHT");
             }
                 
@@ -204,13 +197,13 @@ void PlayerPhysicsComponent::update(double dt) {
             }
             
         }
-        if (((Keyboard::isKeyPressed(Keyboard::Left) && _grounded) ||
+        if ((((Keyboard::isKeyPressed(Keyboard::Left) && _grounded) ||
             (Keyboard::isKeyPressed(Keyboard::Left) &&
             Keyboard::isKeyPressed(Keyboard::Space) &&
-            doubleJump == true))) {
+            doubleJump == true))) && !(Keyboard::isKeyPressed(Keyboard::Right))) {
             if (getVelocity().x > 0)
             {
-                setVelocity(Vector2f(0, 0));
+                setVelocity(Vector2f(0, getVelocity().y));
                 printf("DAMPLEFT");
             }
                

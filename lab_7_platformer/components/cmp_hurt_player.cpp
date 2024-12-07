@@ -18,7 +18,7 @@ void HurtComponent::update(double dt) {
                 playerHealth[0]->hurt(_damage); // Hurt the player
                 cout << "Player hurt for " << _damage << " damage!" << endl;
             }
-            // Optional: Hurt the enemy as well (if necessary)
+            //Hurt the enemy as well (if necessary)
             auto enemyHealth = _parent->GetCompatibleComponent<HealthPointComponent>();
             if (!enemyHealth.empty()) {
                 enemyHealth[0]->hurt(5); // Deal 5 damage to the enemy

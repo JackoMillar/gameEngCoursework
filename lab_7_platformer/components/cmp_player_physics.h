@@ -3,6 +3,11 @@
 #include "cmp_physics.h"
 #include "maths.h"
 #include "engine.h"
+#include "system_physics.h"
+#include "cmp_player_abilities.h"
+#include "../components/cmp_scoring.h"
+#include <LevelSystem.h>
+#include <SFML/Window/Keyboard.hpp>
 
 
 class Scene;
@@ -68,13 +73,18 @@ private:
             printf("AOE Attack triggered at position: (%.2f, %.2f)\n", playerPosition.x, playerPosition.y);
             std::vector<std::shared_ptr<Entity>> allEntities = entityManager.list; // Replace with your actual logic
             
-            float searchRadius = 150.0f;
+            float searchRadius = 200.0f;
 
             auto nearbyEntities = findEntitiesInRange(playerPosition, searchRadius, allEntities);
            
             for (const auto& entity : nearbyEntities) {
                 printf("Entity found within range at: (%.2f, %.2f)\n", entity->getPosition().x, entity->getPosition().y);
                 entity->markForDeletion();
+                auto scoreComponent = _parent->GetCompatibleComponent<ScoreComponent>();
+                if (!scoreComponent.empty() && entity->isVisible()) {
+                    scoreComponent[0]->addScore(10); // Add 10 to the score when the player hits the ground
+                    printf("SCORE ADDED");
+                }
             }
         }
     }

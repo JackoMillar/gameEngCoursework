@@ -212,8 +212,10 @@ void Level1Scene::Update(const double& dt) {
     float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
     float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
 
+        // see outside the map
+        view.setCenter(playerPos.x, playerPos.y);
         // Update the view center
-        view.setCenter(clampedX, clampedY);
+        //view.setCenter(clampedX, clampedY);
         Engine::GetWindow().setView(view);
 
         // Update the score entity's position to follow the screen

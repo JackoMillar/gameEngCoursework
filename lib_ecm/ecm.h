@@ -36,6 +36,8 @@ struct EntityManager {
       list.push_back(entity);
   }
 
+  void removeMarkedEntities();
+
   void update(double dt);
   void render();
   std::vector<std::shared_ptr<Entity>> find(const std::string& tag) const;
@@ -45,6 +47,7 @@ struct EntityManager {
 
 class Entity {
   friend struct EntityManager;
+  bool _markedForDeletion = false;
 
 protected:
   std::vector<std::shared_ptr<Component>> _components;
@@ -68,6 +71,9 @@ public:
   virtual void render();
 
   //
+  void markForDeletion() { _markedForDeletion = true; }
+  bool isMarkedForDeletion() const { return _markedForDeletion; }
+
   const sf::Vector2f& getPosition() const;
 
   void setPosition(const sf::Vector2f& _position);

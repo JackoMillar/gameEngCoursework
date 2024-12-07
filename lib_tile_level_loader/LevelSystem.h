@@ -7,7 +7,7 @@
 #include <vector>
 #include <map>
 
-extern int exitcd;
+extern double exitcd;
 
 #define ls LevelSystem
 

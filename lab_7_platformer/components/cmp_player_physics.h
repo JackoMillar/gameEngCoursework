@@ -56,26 +56,25 @@ public:
 
 private:
     void executeAbility() {
-        printf("Test1\n");
-        printf("Player touched the ground! Activating ability...\n");
+        
         auto compatibleComponents = _parent->get_components<PlayerPhysicsComponent>();
         if (!compatibleComponents.empty()) {
             
             // When the ball hits the ground, do AOE attack
-            printf("Test2\n");
+            
             float aoe = 100.f;
             auto playerPosition = _parent->getPosition();
-            //_parent->setForDelete();
 
             printf("AOE Attack triggered at position: (%.2f, %.2f)\n", playerPosition.x, playerPosition.y);
             std::vector<std::shared_ptr<Entity>> allEntities = entityManager.list; // Replace with your actual logic
             
-            float searchRadius = 100.0f;
+            float searchRadius = 150.0f;
 
             auto nearbyEntities = findEntitiesInRange(playerPosition, searchRadius, allEntities);
-            printf("Test3\n");
+           
             for (const auto& entity : nearbyEntities) {
                 printf("Entity found within range at: (%.2f, %.2f)\n", entity->getPosition().x, entity->getPosition().y);
+                entity->markForDeletion();
             }
         }
     }
@@ -87,19 +86,18 @@ private:
         const std::vector<std::shared_ptr<Entity>>& entities) {
 
         std::vector<std::shared_ptr<Entity>> result;
-        printf("Test4\n");
+    
         for (const auto& entity : entities) {
             if (!entity) {
                 printf("Warning: Null entity encountered.\n");
                 continue;
             }
-            printf("test6\n");
+          
             // Skip if the entity is the same as _parent/player
             if (entity.get() == _parent) {
                 printf("this is the player\n");
                 continue;
             }
-            printf("Test5\n");
             const auto entityPos = entity->getPosition();
             const float distance = std::hypot(entityPos.x - position.x, entityPos.y - position.y);  // Calculate the distance
             if (distance <= radius) {
@@ -110,10 +108,4 @@ private:
 
         return result;
     }
-
-    void applyDamage(Entity* entity) {
-        // Example: Assume entities have a health component
-        entity->is_fordeletion(); 
-    }
-
 };

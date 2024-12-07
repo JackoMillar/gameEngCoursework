@@ -64,12 +64,9 @@ void Level1Scene::Load() {
   vector<float> x;
   vector<float> y;
 
-<<<<<<< Updated upstream
+
   
-  for (size_t n = 0; n < 5; ++n) 
-=======
   for (size_t n = 0; n < 50; ++n) 
->>>>>>> Stashed changes
   {
     auto TriEnemy = makeEntity();
     x.push_back(x_dist(engine));

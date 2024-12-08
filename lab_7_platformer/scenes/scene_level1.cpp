@@ -25,6 +25,8 @@ extern EntityManager entityManager;
 static shared_ptr<Entity> player;
 double exitcd = 2;
 static shared_ptr<Entity> score;
+int rnd = 1;
+int expo = 1;
 
 void Level1Scene::Load() {
     cout << " Scene 1 Load" << endl;
@@ -48,7 +50,7 @@ void Level1Scene::Load() {
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
-        player->addComponent<HealthPointComponent>(50);
+        player->addComponent<HealthPointComponent>(5000000000000);
         // Add ScoreComponent directly to the player
         player->addComponent<ScoreComponent>();
         entityManager.addEntity(player);
@@ -56,37 +58,38 @@ void Level1Scene::Load() {
 
   //creating enemies
   //Setup C++ random number generation
-  random_device dev;
-  default_random_engine engine(dev());
+  std::random_device dev;
+  std::default_random_engine engine(dev());
 
-  uniform_real_distribution<float> x_dist(45.f, ls::getWidth() * 40.f - 45.f);
-  uniform_real_distribution<float> y_dist(45.f, ls::getHeight() * 40.f - 45.f);
+  std::uniform_real_distribution<float> x_dist(45.f, ls::getWidth() * 40.f - 45.f);
+  std::uniform_real_distribution<float> y_dist(45.f, ls::getHeight() * 40.f - 45.f);
+  std::uniform_int_distribution<int> rand(4, 8);
   vector<float> x;
   vector<float> y;
   
-  for (size_t n = 0; n < 50; ++n) 
+  for (size_t n = 0; n < rnd * rand(engine); ++n) 
   {
     auto TriEnemy = makeEntity();
     x.push_back(x_dist(engine));
     y.push_back(y_dist(engine));
-    bool repeat = false;
+    bool valid = true;
     while (true)
     {
         for(int ix = 0; ix < x.size()-1; ix++){
             for(int iy = 0; iy < y.size()-1; iy++){
                 if(x[n] == x[ix] && y[n] == y[iy]){
-                    repeat = true;
+                    valid = false;
                 }
             }
         }
-        if(repeat == false){
+        if(valid == true){
             TriEnemy->setPosition(Vector2f(x[n], y[n]));
             break;
         }
         else{
             x[n] = x_dist(engine);
             y[n] = y_dist(engine);
-            repeat = false;
+            valid = true;
         }
     }
 
@@ -162,7 +165,6 @@ void Level1Scene::Load() {
       e->addComponent<PhysicsComponent>(false, Vector2f(40.f, 40.f));
     }
   }
-    //Simulate long loading times
     cout << " Scene 1 Load Done" << endl;
     setLoaded(true);
 
@@ -187,8 +189,9 @@ void Level1Scene::Update(const double& dt) {
         else{
             // Check if the player has reached the end tile
             if (ls::getTileAt(player->getPosition()) == ls::END) {
-                exitcd = 120;
+                exitcd = 2;
                 ls::setColor(ls::END, Color::Red);
+                rnd+=expo;
                 Engine::ChangeScene((Scene*)&level2);
                 return;
             }
@@ -213,7 +216,7 @@ void Level1Scene::Update(const double& dt) {
     // Clamp the view's center to the level bounds
     float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
     float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
-
+        
         // see outside the map
         view.setCenter(playerPos.x, playerPos.y);
         // Update the view center

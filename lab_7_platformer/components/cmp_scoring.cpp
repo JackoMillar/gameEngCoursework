@@ -29,7 +29,7 @@ void ScoreComponent::update(double dt) {
     if (rnd != lvl){
         rnd = lvl;
         scale = 1.1;
-    }else{
+    }else if(scale > 0){
         scale-=0.02*dt;
     }
     

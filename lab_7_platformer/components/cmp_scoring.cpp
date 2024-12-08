@@ -2,6 +2,10 @@
 #include "cmp_scoring_manager.h"
 #include <system_renderer.h>
 #include <system_resources.h>
+#include "../game.h"
+
+int lvl = 0;
+double scale = 1.1;
 
 ScoreComponent::ScoreComponent(Entity* parent, const std::string& fontFile)
     : Component(parent), _score(0), _string("Score: " + std::to_string(ScoreManager::GetScore())) {
@@ -14,7 +18,7 @@ ScoreComponent::ScoreComponent(Entity* parent, const std::string& fontFile)
 }
 
 void ScoreComponent::addScore(int amount) {
-    ScoreManager::AddScore(amount); // Update the global score
+    ScoreManager::AddScore(amount*scale); // Update the global score
     _string = "Score: " + std::to_string(ScoreManager::GetScore()); // Update the string
     _text.setString(_string); // Update the text
 }
@@ -22,6 +26,13 @@ void ScoreComponent::addScore(int amount) {
 void ScoreComponent::update(double dt) {
     sf::Vector2f parentPosition = _parent->getPosition();
     _text.setPosition(parentPosition.x - 60.f, parentPosition.y - 70.f);
+    if (rnd != lvl){
+        rnd = lvl;
+        scale = 1.1;
+    }else{
+        scale-=0.02*dt;
+    }
+    
 }
 
 void ScoreComponent::render() {

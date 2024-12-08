@@ -108,6 +108,11 @@ void PlayerPhysicsComponent::update(double dt) {
                 teleport(Vector2f(pos.x, pos.y - 5.0f));
                 impulse(Vector2f(0, -10.f));
                 printf("GROUND\n");
+                /*auto scoreComponent = _parent->GetCompatibleComponent<ScoreComponent>();
+                if (!scoreComponent.empty()) {
+                    scoreComponent[0]->addScore(10); // Add 10 to the score when the player hits the ground
+                    printf("SCORE ADDED");
+                }*/
             }
             if ((Keyboard::isKeyPressed(Keyboard::Up) && _grounded) ||
                 (Keyboard::isKeyPressed(Keyboard::Up) &&

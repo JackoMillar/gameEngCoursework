@@ -123,6 +123,8 @@ void Level1Scene::Load() {
                   make_shared<SeekDecision>())
           );
       TriEnemy->addComponent<DecisionTreeComponent>(decision);
+
+      TriEnemy->addTag("TriEnemy");
       entityManager.addEntity(TriEnemy);
   }
 

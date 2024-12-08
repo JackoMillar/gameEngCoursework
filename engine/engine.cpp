@@ -141,6 +141,7 @@ void Engine::ChangeScene(Scene* s) {
   for (const auto& entity : scoreEntities) 
   {
       entity->markForDeletion();
+      entity->setForDelete();
   }
 
 

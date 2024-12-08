@@ -45,7 +45,7 @@ void Level2Scene::Load() {
         s->getShape().setOrigin(Vector2f(20.f, 20.f));
         player->addComponent<PlayerPhysicsComponent>(Vector2f(40.f, 40.f));
         player->addComponent<OnGroundAbilityComponent>();
-        player->addComponent<HealthPointComponent>(5000000000000);
+        player->addComponent<HealthPointComponent>(1);
         // Add ScoreComponent directly to the player
         player->addComponent<ScoreComponent>();
         entityManager.addEntity(player);

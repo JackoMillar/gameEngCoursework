@@ -10,7 +10,6 @@ void Entity::addTag(const std::string& t) { _tags.insert(t); }
 const std::set<std::string>& Entity::getTags() const { return _tags; }
 
 void EntityManager::removeMarkedEntities() {
-    // Use erase-remove idiom for simplicity
     list.erase(std::remove_if(list.begin(), list.end(),
         [](const std::shared_ptr<Entity>& entity) {
             return entity->isMarkedForDeletion();
@@ -92,6 +91,14 @@ Entity::~Entity() {
         "Can't delete entity, someone is grabbing a component!");
   }
 
+  while (!_components.empty()) {
+      printf("Deleting component from entity: %p\n", this);
+      _components.pop_back();
+  }
+  if (!_components.empty()) {
+      throw std::runtime_error("Some components weren't deleted properly!");
+  }
+
   _components.clear();
 }
 
@@ -100,6 +107,8 @@ Component::~Component() {}
 bool Component::is_fordeletion() const { return _fordeletion; }
 
 void EntityManager::update(double dt) {
+
+
     for (size_t i = 0; i < list.size(); ++i) {
         if (list[i]->isMarkedForDeletion()) {
             list.erase(list.begin() + i);

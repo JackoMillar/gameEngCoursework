@@ -19,18 +19,3 @@ public:
     explicit SteeringComponent(Entity* p, Entity* player);
     SteeringComponent() = delete;
 };
-
-
-/*
-class EnemyAIComponent : public ActorMovementComponent {
-protected:
-  sf::Vector2f _direction;
-
-public:
-  void update(double dt) override;
-
-  explicit EnemyAIComponent(Entity* p);
-
-  EnemyAIComponent() = delete;
-};
-*/

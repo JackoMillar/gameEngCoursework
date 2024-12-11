@@ -1,28 +1,10 @@
 #include "cmp_scoring_manager.h"
 
-#include "../components/cmp_player_physics.h"
-#include "../components/cmp_sprite.h"
-#include "../components/cmp_health.h"
-#include "../components/cmp_scoring.h"
-//#include "../components/cmp_scoring_manager.h"
-#include "../components/cmp_enemy_ai.h"
-#include "../components/cmp_state_machine.h"
-//#include "../components/cmp_enemy_states.h"
-#include "../components/steering_decisions.h"
-#include "../components/steering_states.h"
-#include "../game.h"
-#include "../components/cmp_text.h"
-#include "../components/cmp_hurt_player.h"
-#include <LevelSystem.h>
-#include <iostream>
-#include <thread>
-#include <random>
-#include <Box2D/Dynamics/b2Body.h>
-
 int ScoreManager::score = 0;
 int ScoreManager::highScore = 0;
 
 void ScoreManager::AddScore(int points) {
+    // Add Points to Score
     score += points;
     if (score > highScore)
     {
@@ -32,6 +14,7 @@ void ScoreManager::AddScore(int points) {
 }
 
 int ScoreManager::GetScore() {
+    // Return score
     return score;
 }
 
@@ -40,5 +23,6 @@ int ScoreManager::GetHighScore() {
 }
 
 void ScoreManager::ResetScore() {
+    // Set Score to 0
     score = 0;
 }

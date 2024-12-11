@@ -9,8 +9,8 @@ public:
     void update(double dt) override;
     void render() override;
 
-    void addScore(int amount); // Method to add to the score
-    int getScore() const; // Method to get the current score
+    void addScore(int amount); 
+    int getScore() const; 
 
     ~ScoreComponent() override = default;
 
@@ -18,5 +18,5 @@ protected:
     std::string _string;
     sf::Text _text;
     std::shared_ptr<sf::Font> _font;
-    int _score; // Store the score
+    int _score;
 };

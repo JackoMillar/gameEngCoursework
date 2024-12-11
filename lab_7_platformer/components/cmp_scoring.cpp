@@ -11,12 +11,18 @@ ScoreComponent::ScoreComponent(Entity* parent, const std::string& fontFile)
     : Component(parent), _score(0), _string("Score: " + std::to_string(ScoreManager::GetScore())) {
     // Set up the text for score display
     _text.setString(_string);
-    _font = Resources::get<sf::Font>(fontFile); // Get the font from resources
+    // Set font
+    _font = Resources::get<sf::Font>(fontFile);
     _text.setFont(*_font);
+    // Set size and color
     _text.setCharacterSize(24);
-    _text.setFillColor(sf::Color::Red); // Set the text color to red
+    _text.setFillColor(sf::Color::Red);
 }
 
+/* 
+ Add score to player
+ store score in scoreManager
+*/
 void ScoreComponent::addScore(int amount) {
     ScoreManager::AddScore(amount*scale); // Update the global score
     _string = "Score: " + std::to_string(ScoreManager::GetScore()); // Update the string
@@ -41,5 +47,6 @@ void ScoreComponent::render() {
 }
 
 int ScoreComponent::getScore() const {
+    // Grab score from scoreManager
     return ScoreManager::GetScore();
 }

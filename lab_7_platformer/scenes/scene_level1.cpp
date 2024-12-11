@@ -98,6 +98,7 @@ void Level1Scene::Load() {
       TriEnemy->addComponent<SteeringComponent>(player.get());
       auto p = TriEnemy->addComponent<PhysicsComponent>(true, Vector2f(15.f, 15.f));
       p->setWeightless();
+      p->isNearEdge();
       TriEnemy->addComponent<HealthPointComponent>(5);
       auto hurt = TriEnemy->addComponent<HurtComponent>(10);
       hurt->setPlayer(player);

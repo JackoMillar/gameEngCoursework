@@ -6,7 +6,6 @@
 #include "../components/cmp_scoring_manager.h"
 #include "../components/cmp_enemy_ai.h"
 #include "../components/cmp_state_machine.h"
-//#include "../components/cmp_enemy_states.h"
 #include "../components/steering_decisions.h"
 #include "../components/steering_states.h"
 #include "../game.h"
@@ -64,6 +63,8 @@ void Level1Scene::Load() {
   vector<float> x;
   vector<float> y;
   
+
+
   for (size_t n = 0; n < 50; ++n) 
   {
     auto TriEnemy = makeEntity();

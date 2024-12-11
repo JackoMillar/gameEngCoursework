@@ -29,5 +29,4 @@ public:
   void teleport(const sf::Vector2f& v);
   ~PhysicsComponent() override;
   void setWeightless();
-  bool isNearEdge();
 };

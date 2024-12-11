@@ -169,28 +169,6 @@ std::vector<const b2Contact const*> PhysicsComponent::getTouching() const {
   return ret;
 }
 
-//potential Raycasting
-bool PhysicsComponent::isNearEdge() {
-    b2RayCastInput input;
-    //start of ray at enemy current position
-    input.p1 = _body->GetPosition();
-    //end of ray
-    input.p2 = _body->GetPosition() + b2Vec2(1.0f, 0); //Ray length
-    input.maxFraction = 1.0f;
-
-    //iterating through the world
-    for (b2Body* b = Physics::GetWorld()->GetBodyList(); b; b = b->GetNext()) {
-        for (b2Fixture* f = b->GetFixtureList(); f; f = f->GetNext()) {
-            b2RayCastOutput output;
-            if (f->RayCast(&output, input, 0)) {
-                printf("Ray hit something");
-                return false; //Ray hit something
-            }
-        }
-    }
-    printf("edge hit");
-    return true; //Edge detected
-}
 
 void PhysicsComponent::setRestitution(float r) {
   _fixture->SetRestitution(r);

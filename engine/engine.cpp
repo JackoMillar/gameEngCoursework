@@ -18,6 +18,8 @@ static float loadingspinner = 0.f;
 static float loadingTime;
 static RenderWindow* _window;
 
+extern EntityManager entityManager;
+
 
 
 void Loading_update(float dt, const Scene* const scn) {
@@ -135,8 +137,16 @@ void Engine::ChangeScene(Scene* s) {
   auto old = _activeScene;
   _activeScene = s;
 
+  auto scoreEntities = entityManager.find("TriEnemy");  
+  for (const auto& entity : scoreEntities) 
+  {
+      entity->markForDeletion();
+      entity->setForDelete();
+  }
+
+
   if (old != nullptr) {
-    old->UnLoad(); // todo: Unload Async
+    old->UnLoad(); 
   }
 
   if (!s->isLoaded()) {
@@ -146,6 +156,9 @@ void Engine::ChangeScene(Scene* s) {
     //_activeScene->Load();
     loading = true;
   }
+
+
+
 }
 
 void Scene::Update(const double& dt) { ents.update(dt); }

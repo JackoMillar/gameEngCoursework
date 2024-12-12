@@ -7,6 +7,8 @@
 #include <vector>
 #include <map>
 
+extern double exitcd;
+
 #define ls LevelSystem
 
 class LevelSystem {
@@ -17,13 +19,14 @@ public:
 
   typedef unsigned char Tile;
 
+
   enum TILES {
     EMPTY = ' ',
     START = 's',
     END = 'e',
     WALL = 'w',
     ENEMY = 'n',
-    WAYPOINT = '+'
+    ENEMY2 = 'm',
   };
 
   static Tile getTile(sf::Vector2ul);

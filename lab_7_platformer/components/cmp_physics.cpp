@@ -70,7 +70,10 @@ PhysicsComponent::PhysicsComponent(Entity* p, bool dyn,
 
 void PhysicsComponent::setFriction(float r) { _fixture->SetFriction(r); }
 
-void PhysicsComponent::setMass(float m) { _fixture->SetDensity(m); }
+void PhysicsComponent::setMass(float m) {
+  _fixture->SetDensity(m);
+  _body->ResetMassData();
+}
 
 void PhysicsComponent::teleport(const sf::Vector2f& v) {
   _body->SetTransform(sv2_to_bv2(invert_height(v)), 0.0f);
@@ -93,6 +96,10 @@ PhysicsComponent::~PhysicsComponent() {
   _body = nullptr;
 }
 
+void PhysicsComponent::setWeightless(){
+  _body->SetGravityScale(0);
+}
+
 void PhysicsComponent::render() {}
 
 void PhysicsComponent::impulse(const sf::Vector2f& i) {
@@ -108,26 +115,42 @@ void PhysicsComponent::dampen(const sf::Vector2f& i) {
 }
 
 bool PhysicsComponent::isTouching(const PhysicsComponent& pc) const {
-  b2Contact* bc;
-  return isTouching(pc, bc);
+    const b2Fixture* otherFixture = pc.getFixture();
+
+    // Traverse all contact edges
+    b2ContactEdge* edge = _body->GetContactList();
+    while (edge != nullptr) {
+        b2Contact* contact = edge->contact;
+
+        // Check if the contact involves our fixture and the other fixture
+        if (contact->IsTouching() &&
+            ((contact->GetFixtureA() == _fixture && contact->GetFixtureB() == otherFixture) ||
+                (contact->GetFixtureA() == otherFixture && contact->GetFixtureB() == _fixture))) {
+            return true;
+        }
+        edge = edge->next;
+    }
+
+    return false;
 }
 
-bool PhysicsComponent::isTouching(const PhysicsComponent& pc,
-                                  b2Contact const* bc) const {
-  const auto _otherFixture = pc.getFixture();
-  const auto& w = *Physics::GetWorld();
-  const auto contactList = w.GetContactList();
-  const auto clc = w.GetContactCount();
-  for (int32 i = 0; i < clc; i++) {
-    const auto& contact = (contactList[i]);
-    if (contact.IsTouching() && ((contact.GetFixtureA() == _fixture &&
-                                  contact.GetFixtureA() == _otherFixture) ||
-                                 (contact.GetFixtureA() == _otherFixture &&
-                                  contact.GetFixtureA() == _fixture))) {
-      bc = &contact;
+bool PhysicsComponent::isTouching(const PhysicsComponent& pc, const b2Contact*& bc) const {
+  const b2Fixture* otherFixture = pc.getFixture();
+
+  b2ContactEdge* edge = _body->GetContactList();
+  while (edge != nullptr) {
+    b2Contact* contact = edge->contact;
+
+    if (contact->IsTouching() &&
+        ((contact->GetFixtureA() == _fixture && contact->GetFixtureB() == otherFixture) ||
+         (contact->GetFixtureA() == otherFixture && contact->GetFixtureB() == _fixture))) {
+      bc = contact; // Set the contact reference
       return true;
     }
+    edge = edge->next;
   }
+
+  bc = nullptr; // Ensure bc is set to null if no contact is found
   return false;
 }
 
@@ -145,6 +168,7 @@ std::vector<const b2Contact const*> PhysicsComponent::getTouching() const {
 
   return ret;
 }
+
 
 void PhysicsComponent::setRestitution(float r) {
   _fixture->SetRestitution(r);

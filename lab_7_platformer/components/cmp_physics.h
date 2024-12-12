@@ -15,7 +15,7 @@ public:
 
   b2Fixture* const getFixture() const;
   bool isTouching(const PhysicsComponent& pc) const;
-  bool isTouching(const PhysicsComponent& pc, b2Contact const* bc) const;
+  bool isTouching(const PhysicsComponent& pc, const b2Contact*& bc) const;
   std::vector<const b2Contact*> getTouching() const;
   const sf::Vector2f getVelocity() const;
   void setRestitution(float r);
@@ -28,4 +28,5 @@ public:
   void setVelocity(const sf::Vector2f& v);
   void teleport(const sf::Vector2f& v);
   ~PhysicsComponent() override;
+  void setWeightless();
 };

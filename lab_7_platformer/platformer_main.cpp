@@ -10,6 +10,10 @@ Level1Scene level1;
 Level2Scene level2;
 Level3Scene level3;
 
+extern EntityManager entityManager;
+int exitcd = 120;
+static shared_ptr<Entity> score;
+
 EntityManager entityManager;
 
 int main() {

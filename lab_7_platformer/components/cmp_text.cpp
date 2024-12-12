@@ -20,3 +20,11 @@ void TextComponent::SetText(const std::string& str) {
   _string = str;
   _text.setString(_string);
 }
+
+void TextComponent::SetColor(const sf::Color& color) {
+    _text.setFillColor(color);
+}
+
+sf::Text& TextComponent::GetText() {
+    return _text;
+}

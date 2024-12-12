@@ -4,6 +4,11 @@
 #include "../components/cmp_health.h"
 #include "../components/cmp_scoring.h"
 #include "../components/cmp_scoring_manager.h"
+#include "../components/cmp_enemy_ai.h"
+#include "../components/cmp_state_machine.h"
+#include "../components/steering_decisions.h"
+#include "../components/steering_states.h"
+#include "../game.h"
 #include "../components/cmp_text.h"
 #include "../game.h"
 #include <LevelSystem.h>

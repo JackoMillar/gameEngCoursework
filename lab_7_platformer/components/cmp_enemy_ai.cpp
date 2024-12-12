@@ -1,5 +1,6 @@
 #include "cmp_enemy_ai.h"
 
+
 using namespace std;
 using namespace sf;
 
@@ -7,14 +8,14 @@ using namespace sf;
 //key beaviour is here in update
 void SteeringComponent::update(double dt) {
     // If target (player) is more than 100 pixels away then seek
-    if (length(_parent->getPosition() - _player->getPosition()) > 150.0f) {
+    if (length(_parent->getPosition() - _player->getPosition()) > 100.0f) {
         auto output = _seek.getSteering();
         move(output.direction * (float)dt);
     }
     
     // If target (player) is less than 50 pixels away then flee
     else if (length(_parent->getPosition() - _player->getPosition()) <
-        80.0f) {
+        50.0f) {
         auto output = _flee.getSteering();
         move(output.direction * (float)dt);
     }

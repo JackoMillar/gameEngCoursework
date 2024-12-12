@@ -169,6 +169,7 @@ std::vector<const b2Contact const*> PhysicsComponent::getTouching() const {
   return ret;
 }
 
+
 void PhysicsComponent::setRestitution(float r) {
   _fixture->SetRestitution(r);
 }

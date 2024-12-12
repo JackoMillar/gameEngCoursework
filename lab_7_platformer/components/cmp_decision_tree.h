@@ -13,7 +13,7 @@ public:
 };
 
 //binary decision
-//aim is to traverse either down truebranch or false branch depending on condition
+//aim is to traverse either down true branch or false branch depending on condition
 class Decision : public DecisionTreeNode
 {
 protected:

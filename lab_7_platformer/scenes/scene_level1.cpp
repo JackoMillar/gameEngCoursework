@@ -8,6 +8,7 @@
 #include "../components/cmp_state_machine.h"
 #include "../components/steering_decisions.h"
 #include "../components/steering_states.h"
+#include "../components/cmp_hurt_player.h"
 #include "../game.h"
 #include "../components/cmp_text.h"
 #include "../game.h"

@@ -205,10 +205,6 @@ void Level2Scene::Update(const double& dt) {
     // Update the view center
     view.setCenter(clampedX, clampedY);
     Engine::GetWindow().setView(view);
-
-    // Call the base update
-    float clampedX = std::clamp(playerPos.x, halfWindowSize.x, levelSize.x - halfWindowSize.x);
-    float clampedY = std::clamp(playerPos.y, halfWindowSize.y + levelOffset.y, levelSize.y - halfWindowSize.y + levelOffset.y);
         
         Engine::GetWindow().setView(view);
 

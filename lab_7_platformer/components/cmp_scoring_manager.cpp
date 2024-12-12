@@ -1,4 +1,6 @@
 #include "cmp_scoring_manager.h"
+#include <iostream>
+using namespace std;
 
 int ScoreManager::score = 0;
 int ScoreManager::highScore = 0;
